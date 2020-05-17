@@ -1,0 +1,773 @@
+Disable chat with "/disablechat" /help for more commands
+
+Type "/help" for more commands
+
+Karma System: Active. Leavers will receive a karma penalty
+
+
+Treehouse turn to place settlement
+
+Treehouse placed a settlement
+
+Treehouse turn to place road
+
+Treehouse placed a road
+
+
+bambee turn to place settlement
+
+bambee placed a settlement
+
+bambee turn to place road
+
+bambee placed a road
+
+
+ZacTodd turn to place settlement
+
+ZacTodd placed a settlement
+
+ZacTodd turn to place road
+
+ZacTodd placed a road
+
+
+Norton3528 turn to place settlement
+
+Norton3528 placed a settlement
+
+Norton3528 turn to place road
+
+Norton3528 placed a road
+
+
+Norton3528 turn to place settlement
+
+Norton3528 placed a settlement
+
+Norton3528 turn to place road
+
+Norton3528 placed a road
+
+
+ZacTodd turn to place settlement
+
+ZacTodd placed a settlement
+
+ZacTodd turn to place road
+
+ZacTodd placed a road
+
+
+bambee turn to place settlement
+
+bambee placed a settlement
+
+bambee turn to place road
+
+bambee placed a road
+
+
+Treehouse turn to place settlement
+
+Treehouse placed a settlement
+
+Treehouse turn to place road
+
+Treehouse placed a road
+
+
+Giving out starting resources
+
+ZacTodd got: lumberore wool
+
+bambee got: lumber grain wool
+
+Treehouse got: brick grainore
+
+Norton3528 got:ore lumber lumber
+
+
+Treehouse rolled: dice_2 dice_5
+
+Treehouse moved robberto tile: 16
+
+Treehouse stole card from: bambee
+
+Treehouse bought development card
+
+
+bambee rolled: dice_5 dice_1
+
+ZacTodd got: grain
+
+bambee got: grain
+
+Treehouse got: brick
+
+Norton3528 got: brick
+
+
+ZacTodd rolled: dice_5 dice_4
+
+bambee got:ore lumber
+
+Treehouse got:ore
+
+Norton3528 got:ore
+
+ZacTodd bought development card
+
+
+Norton3528 rolled: dice_4 dice_2
+
+ZacTodd got: grain
+
+bambee got: grain
+
+Treehouse got: brick
+
+Norton3528 got: brick
+
+Norton3528 built a road
+
+Norton3528 built a road
+
+
+Treehouse rolled: dice_6 dice_2
+
+ZacTodd got: wool
+
+Norton3528 got: lumber
+
+Treehouse used knight
+
+Treehouse moved robberto tile: 6
+
+Treehouse stole card from: Norton3528
+
+Treehouse built a road
+
+
+bambee rolled: dice_2 dice_6
+
+ZacTodd got: wool
+
+bambee wants to give: grain for: wool
+
+
+ZacTodd rolled: dice_3 dice_3
+
+ZacTodd got: grain
+
+bambee got: grain
+
+Treehouse got: brick
+
+Norton3528 got: brick
+
+ZacTodd wants to give: wool for: brick
+
+ZacTodd traded with: Treehouse
+
+ZacTodd built a road
+
+ZacTodd wants to give: grain for: ore
+
+Treehouse has disconnected, a bot will continue the game. Bot will wait a little to give Treehouse a chance to join back
+
+ZacTodd wants to give: grain for: ore
+
+Karma System: Active again. You will receive a karma penalty if you leave the game
+
+Treehouse has reconnected!
+
+ZacTodd wants to give: grain for: ore
+
+
+Norton3528 rolled: dice_1 dice_1
+
+
+Treehouse rolled: dice_5 dice_6
+
+ZacTodd got:ore brick
+
+Treehouse got: brick
+
+Norton3528 got:ore
+
+Treehouse wants to give: brick for: ore
+
+Treehouse wants to give: brick for: lumber
+
+Treehouse wants to give: brick for: lumber
+
+bambee wants to give Treehouse : ore for: brick
+
+Treehouse wants to give: brick for: lumber
+
+
+bambee rolled: dice_6 dice_4
+
+Treehouse got: grainore
+
+Norton3528 got: grain
+
+bambee wants to give: ore for: brick
+
+Treehouse wants to give bambee : brick for: lumber
+
+bambee wants to give: lumber for: brick
+
+bambee traded with: Treehouse
+
+bambee built a road
+
+bambee wants to give: grain for: wool
+
+
+ZacTodd rolled: dice_3 dice_2
+
+ZacTodd got: lumber
+
+bambee got: grain
+
+ZacTodd built a settlement
+
+
+Norton3528 rolled: dice_4 dice_3
+
+Norton3528 moved robberto tile: 18
+
+Norton3528 stole card from: ZacTodd
+
+Norton3528 stole:ore
+
+Norton3528 wants to give: ore for: grain
+
+Norton3528 traded with: bambee
+
+Norton3528 built a city
+
+
+Treehouse rolled: dice_2 dice_4
+
+ZacTodd got: grain
+
+bambee got: grain
+
+Treehouse got: brick
+
+Norton3528 got: brick
+
+Treehouse built a settlement
+
+
+bambee rolled: dice_5 dice_5
+
+Treehouse got: grainoreore
+
+Norton3528 got: grain
+
+bambee wants to give: grain for: ore
+
+bambee traded with: Treehouse
+
+bambee built a city
+
+
+ZacTodd rolled: dice_6 dice_1
+
+ZacTodd moved robberto tile: 8
+
+ZacTodd stole card from: Norton3528
+
+You stole: brick from: Norton3528
+
+
+Norton3528 rolled: dice_4 dice_2
+
+ZacTodd got: grain
+
+bambee got: grain grain
+
+
+Treehouse rolled: dice_3 dice_1
+
+bambee got: wool
+
+Treehouse got: grain wool
+
+Treehouse built a city
+
+
+bambee rolled: dice_4 dice_4
+
+ZacTodd got: wool
+
+Norton3528 got: lumber lumber
+
+
+ZacTodd rolled: dice_2 dice_4
+
+ZacTodd got: grain
+
+bambee got: grain grain
+
+ZacTodd wants to give: grain for: lumber
+
+ZacTodd wants to give: grain grain for: lumber
+
+
+Norton3528 rolled: dice_2 dice_2
+
+bambee got: wool
+
+Treehouse got: grain wool wool
+
+
+Treehouse rolled: dice_5 dice_1
+
+ZacTodd got: grain
+
+bambee got: grain grain
+
+
+bambee rolled: dice_4 dice_4
+
+ZacTodd got: wool
+
+Norton3528 got: lumber lumber
+
+bambee wants to give: grain for: lumber
+
+bambee wants to give: grain for: brick
+
+Treehouse wants to give bambee : brick for: lumber
+
+bambee wants to give: grain wool for: brick
+
+bambee gave bank: grain grain grain grain and took brick
+
+bambee wants to give: grain grain grain for: lumber
+
+bambee gave bank: grain grain grain grain and took lumber
+
+bambee built a road
+
+
+ZacTodd rolled: dice_2 dice_6
+
+ZacTodd got: wool
+
+Norton3528 got: lumber lumber
+
+ZacTodd gave bank: grain grain grain grain and took ore
+
+ZacTodd bought development card
+
+
+Norton3528 rolled: dice_1 dice_2
+
+ZacTodd got: lumber
+
+bambee got: brick brick
+
+Norton3528 got: lumber lumber
+
+Norton3528 wants to give: lumber for: wool
+
+Treehouse wants to give Norton3528 : wool for: lumber lumber
+
+Norton3528 traded with: bambee
+
+Norton3528 built a settlement
+
+
+Treehouse rolled: dice_2 dice_6
+
+ZacTodd got: wool
+
+Norton3528 got: lumber lumber
+
+
+bambee rolled: dice_5 dice_5
+
+Treehouse got: grainoreoreore
+
+Norton3528 got: grain
+
+bambee wants to give: brick for: grain
+
+
+ZacTodd rolled: dice_3 dice_4
+
+Treehouse has: 11 card. Needs to discard: 5 card
+
+Norton3528 has: 9 card. Needs to discard: 4 card
+
+Norton3528 discarded: lumber lumber lumber lumber
+
+Treehouse discarded: brick brick wool wool wool
+
+ZacTodd moved robberto tile: 10
+
+ZacTodd stole card from: Norton3528
+
+You stole: lumber from: Norton3528
+
+ZacTodd wants to give: lumber for: grain grain
+
+ZacTodd wants to give: lumber for: grain
+
+ZacTodd traded with: Treehouse
+
+ZacTodd used road building
+
+ZacTodd placed a road
+
+ZacTodd placed a road
+
+ZacTodd built a settlement
+
+
+Norton3528 rolled: dice_1 dice_4
+
+ZacTodd got: lumber lumber
+
+bambee got: grain
+
+
+Treehouse rolled: dice_5 dice_1
+
+ZacTodd got: grain
+
+bambee got: grain grain
+
+Treehouse got: brick brick
+
+Norton3528 got: brick brick
+
+Treehouse built a road
+
+Treehouse built a city
+
+
+bambee rolled: dice_2 dice_5
+
+bambee moved robberto tile: 8
+
+bambee stole card from: Treehouse
+
+bambee built a settlement
+
+
+ZacTodd rolled: dice_1 dice_1
+
+ZacTodd wants to give: lumber for: brick
+
+ZacTodd wants to give: wool for: brick
+
+
+Norton3528 rolled: dice_3 dice_4
+
+Norton3528 moved robberto tile: 12
+
+Norton3528 could not steal card from : Treehouse
+
+Norton3528 built a road
+
+Norton3528 built a road
+
+
+Treehouse rolled: dice_1 dice_2
+
+ZacTodd got: lumber
+
+bambee got: brick brick brick
+
+Norton3528 got: lumber lumber
+
+
+bambee rolled: dice_5 dice_1
+
+ZacTodd got: grain
+
+bambee got: grain grain
+
+Treehouse got: brick brick
+
+Norton3528 got: brick brick
+
+bambee wants to give: brick brick for: lumber wool
+
+bambee traded with: ZacTodd
+
+bambee built a settlement
+
+
+ZacTodd rolled: dice_3 dice_5
+
+ZacTodd got: wool
+
+bambee got: lumber
+
+Norton3528 got: lumber lumber
+
+ZacTodd built a road
+
+ZacTodd built a settlement
+
+
+Norton3528 rolled: dice_3 dice_6
+
+ZacTodd got: lumber
+
+bambee got:oreore lumber
+
+Treehouse got:oreore
+
+Norton3528 got:oreore
+
+Norton3528 built a road
+
+Norton3528 built a road
+
+
+Treehouse rolled: dice_2 dice_2
+
+bambee got: wool
+
+Treehouse got: grain wool wool
+
+Norton3528 got: grain
+
+Treehouse bought development card
+
+
+bambee rolled: dice_3 dice_1
+
+bambee got: wool
+
+Treehouse got: grain wool wool
+
+Norton3528 got: grain
+
+bambee built a road
+
+bambee built a road
+
+bambee wants to give: grain for: brick
+
+bambee wants to give: wool for: ore
+
+bambee bought development card
+
+bambee bought development card
+
+
+ZacTodd rolled: dice_3 dice_4
+
+Norton3528 has: 8 card. Needs to discard: 4 card
+
+Norton3528 discarded: lumber lumber lumber grain
+
+ZacTodd moved robberto tile: 10
+
+ZacTodd stole card from: Treehouse
+
+You stole:ore from: Treehouse
+
+ZacTodd bought development card
+
+
+Norton3528 rolled: dice_2 dice_3
+
+ZacTodd got: lumber lumber
+
+bambee got: grain grain
+
+
+Treehouse rolled: dice_6 dice_5
+
+ZacTodd got:oreore brick
+
+Treehouse got: brick brick
+
+Norton3528 got:ore
+
+Treehouse used knight
+
+Treehouse moved robberto tile: 6
+
+Treehouse stole card from: bambee
+
+Treehouse wants to give: brick brick for: lumber
+
+Treehouse traded with: ZacTodd
+
+Treehouse built a road
+
+
+bambee used knight
+
+bambee moved robberto tile: 8
+
+bambee stole card from: Treehouse
+
+bambee rolled: dice_3 dice_1
+
+bambee got: wool
+
+Treehouse got: grain wool wool
+
+Norton3528 got: grain
+
+bambee wants to give: grain for: ore
+
+ZacTodd wants to give bambee : ore for: grain grain grain
+
+
+ZacTodd rolled: dice_6 dice_5
+
+ZacTodd got:oreore brick
+
+Treehouse got: brick brick
+
+Norton3528 got:ore
+
+ZacTodd used knight
+
+ZacTodd moved robberto tile: 10
+
+ZacTodd stole card from: bambee
+
+You stole: grain from: bambee
+
+ZacTodd wants to give: brick for: grain
+
+Treehouse wants to give ZacTodd : grain for: lumber
+
+ZacTodd wants to give: lumber for: grain
+
+ZacTodd traded with: Treehouse
+
+ZacTodd built a city
+
+ZacTodd wants to give: brick for: wool
+
+ZacTodd built a road
+
+
+Norton3528 rolled: dice_5 dice_4
+
+ZacTodd got: lumber
+
+bambee got: lumber
+
+Norton3528 built a city
+
+
+Treehouse rolled: dice_6 dice_3
+
+ZacTodd got: lumber
+
+bambee got: lumber
+
+Treehouse built a settlement
+
+
+bambee rolled: dice_2 dice_2
+
+bambee got: wool
+
+Treehouse got: grain grain wool wool
+
+Norton3528 got: grain
+
+bambee used year of plenty
+
+bambee took from bank: brickore
+
+bambee built a settlement
+
+bambee bought development card
+
+
+ZacTodd rolled: dice_2 dice_3
+
+ZacTodd got: lumber lumber lumber
+
+bambee got: grain grain
+
+ZacTodd wants to give: lumber for: wool
+
+ZacTodd built a road
+
+ZacTodd received longest road
+
+ZacTodd built a road
+
+ZacTodd built a road
+
+
+Norton3528 rolled: dice_2 dice_4
+
+ZacTodd got: grain grain
+
+bambee got: grain grain grain
+
+Treehouse got: brick brick
+
+Norton3528 got: brick brick brick
+
+
+Treehouse rolled: dice_4 dice_1
+
+ZacTodd got: lumber lumber lumber
+
+bambee got: grain grain
+
+Treehouse gave bank: wool wool wool and took ore
+
+Treehouse gave bank: brick brick brick and took ore
+
+Treehouse gave bank: wool wool wool and took ore
+
+Treehouse built a city
+
+
+bambee rolled: dice_3 dice_6
+
+ZacTodd got: lumber
+
+bambee got: lumber
+
+bambee wants to give: grain for: ore
+
+bambee gave bank: grain grain grain and took ore
+
+bambee gave bank: grain grain grain and took wool
+
+bambee bought development card
+
+
+ZacTodd rolled: dice_1 dice_4
+
+ZacTodd got: lumber lumber lumber
+
+bambee got: grain grain
+
+ZacTodd gave bank: lumber lumber lumber lumber lumber lumber lumber lumber and took oreore
+
+ZacTodd built a city
+
+
+trophy ZacTodd won the game! trophy
+
+
+Norton3528 has left the game chat
+
+bambee has left the game chat
+
+Treehouse has left the game chat

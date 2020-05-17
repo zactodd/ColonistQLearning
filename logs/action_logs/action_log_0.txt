@@ -1,0 +1,862 @@
+Disable chat with "/disablechat" /help for more commands
+
+Type "/help" for more commands
+
+Karma System: Active. Leavers will receive a karma penalty
+
+
+bambee turn to place settlement
+
+bambee placed a settlement
+
+bambee turn to place road
+
+bambee placed a road
+
+
+Tami#6966 turn to place settlement
+
+Tami#6966 placed a settlement
+
+Tami#6966 turn to place road
+
+Tami#6966 placed a road
+
+
+Oakes#7878 turn to place settlement
+
+Oakes#7878 placed a settlement
+
+Oakes#7878 turn to place road
+
+Oakes#7878 placed a road
+
+
+ZacTodd turn to place settlement
+
+ZacTodd placed a settlement
+
+ZacTodd turn to place road
+
+ZacTodd placed a road
+
+
+ZacTodd turn to place settlement
+
+ZacTodd placed a settlement
+
+ZacTodd turn to place road
+
+ZacTodd placed a road
+
+
+Oakes#7878 turn to place settlement
+
+Oakes#7878 placed a settlement
+
+Oakes#7878 turn to place road
+
+Oakes#7878 placed a road
+
+
+Tami#6966 turn to place settlement
+
+Bot is placing a settlement for Tami#6966
+
+Tami#6966 placed a settlement
+
+Tami#6966 turn to place road
+
+Tami#6966 placed a road
+
+
+bambee turn to place settlement
+
+bambee placed a settlement
+
+bambee turn to place road
+
+bambee placed a road
+
+
+Giving out starting resources
+
+ZacTodd got: lumber grain wool
+
+Tami#6966 got:ore lumber lumber
+
+bambee got: wool wool
+
+Oakes#7878 got: lumber lumber brick
+
+
+bambee rolled: dice_5 dice_5
+
+Tami#6966 got:ore
+
+Oakes#7878 got: grain
+
+
+Tami#6966 rolled: dice_1 dice_1
+
+bambee got: wool
+
+
+Oakes#7878 rolled: dice_4 dice_2
+
+Tami#6966 got: brick
+
+bambee got: grain
+
+Oakes#7878 got: brick
+
+Oakes#7878 wants to give: lumber for: wool
+
+Oakes#7878 wants to give: lumber for: wool
+
+Oakes#7878 traded with: bambee
+
+Oakes#7878 built a road
+
+
+ZacTodd rolled: dice_1 dice_6
+
+ZacTodd moved robberto tile: 8
+
+ZacTodd stole card from: Tami#6966
+
+ZacTodd bought development card
+
+
+bambee rolled: dice_3 dice_1
+
+ZacTodd got: wool
+
+Tami#6966 got: wool
+
+bambee wants to give: wool for: brick
+
+
+Tami#6966 rolled: dice_6 dice_5
+
+ZacTodd got:ore
+
+Oakes#7878 got:ore brick
+
+Tami#6966 built a road
+
+Tami#6966 wants to give: ore for: grain
+
+
+Oakes#7878 rolled: dice_6 dice_4
+
+Tami#6966 got:ore
+
+Oakes#7878 got: grain
+
+Oakes#7878 wants to give: brick for: lumber
+
+ZacTodd wants to give Oakes#7878 : ore for: brick
+
+Oakes#7878 traded with: Tami#6966
+
+Oakes#7878 built a settlement
+
+
+ZacTodd rolled: dice_3 dice_1
+
+ZacTodd got: wool
+
+Tami#6966 got: wool
+
+Oakes#7878 got: grain
+
+ZacTodd wants to give: lumber for: grain
+
+bambee wants to give ZacTodd : grain for: brick
+
+ZacTodd traded with: Oakes#7878
+
+ZacTodd bought development card
+
+
+bambee rolled: dice_2 dice_2
+
+ZacTodd got: wool
+
+Tami#6966 got: wool
+
+Oakes#7878 got: grain
+
+
+Tami#6966 rolled: dice_2 dice_6
+
+ZacTodd got: wool
+
+Tami#6966 got: lumber
+
+bambee got: wool
+
+Tami#6966 wants to give: ore for: grain
+
+
+Oakes#7878 rolled: dice_5 dice_1
+
+bambee got: grain
+
+
+ZacTodd rolled: dice_6 dice_1
+
+ZacTodd moved robberto tile: 10
+
+ZacTodd stole card from: Tami#6966
+
+
+bambee rolled: dice_6 dice_4
+
+Tami#6966 got:ore
+
+Oakes#7878 got: grain
+
+bambee wants to give: grain for: wool
+
+bambee traded with: ZacTodd
+
+bambee gave bank: wool wool wool wool and took brick
+
+bambee built a road
+
+
+Tami#6966 rolled: dice_4 dice_3
+
+Tami#6966 moved robberto tile: 4
+
+Tami#6966 stole card from: Oakes#7878
+
+Tami#6966 gave bank: oreoreoreore and took grain
+
+Tami#6966 built a settlement
+
+
+Oakes#7878 rolled: dice_2 dice_5
+
+Oakes#7878 moved robberto tile: 10
+
+Oakes#7878 stole card from: Tami#6966
+
+
+ZacTodd rolled: dice_5 dice_6
+
+ZacTodd got:ore
+
+Tami#6966 got: brick
+
+Oakes#7878 got:ore brick
+
+ZacTodd bought development card
+
+
+bambee rolled: dice_6 dice_4
+
+Tami#6966 got: grainore
+
+Oakes#7878 got: grain
+
+
+Tami#6966 rolled: dice_6 dice_5
+
+ZacTodd got:ore
+
+Tami#6966 got: brick
+
+Oakes#7878 got:ore brick
+
+
+Oakes#7878 rolled: dice_5 dice_5
+
+Tami#6966 got: grainore
+
+Oakes#7878 got: grain
+
+Oakes#7878 wants to give: grain for: ore
+
+Oakes#7878 wants to give: grain brick for: ore
+
+ZacTodd wants to give Oakes#7878 : ore for: grain brick lumber
+
+Oakes#7878 built a road
+
+Oakes#7878 traded with: ZacTodd
+
+Oakes#7878 built a city
+
+
+ZacTodd used knight
+
+ZacTodd moved robberto tile: 8
+
+ZacTodd stole card from: Oakes#7878
+
+ZacTodd rolled: dice_5 dice_5
+
+Tami#6966 got: grainore
+
+Oakes#7878 got: grain grain
+
+ZacTodd wants to give: grain for: ore
+
+ZacTodd wants to give: wool for: ore
+
+
+bambee rolled: dice_1 dice_4
+
+ZacTodd got: grain
+
+Oakes#7878 got: lumber
+
+
+Tami#6966 rolled: dice_2 dice_6
+
+ZacTodd got: wool
+
+Tami#6966 got: lumber
+
+bambee got: wool
+
+Tami#6966 built a city
+
+
+Oakes#7878 rolled: dice_6 dice_1
+
+Oakes#7878 moved robberto tile: 10
+
+Oakes#7878 stole card from: Tami#6966
+
+Oakes#7878 built a settlement
+
+
+ZacTodd rolled: dice_3 dice_1
+
+ZacTodd got: wool
+
+Tami#6966 got: wool
+
+Oakes#7878 got: grain
+
+ZacTodd wants to give: wool for: lumber
+
+ZacTodd wants to give: grain for: lumber
+
+ZacTodd gave bank: wool wool wool wool and took lumber
+
+ZacTodd built a road
+
+
+bambee rolled: dice_6 dice_1
+
+bambee moved robberto tile: 8
+
+bambee stole card from: Oakes#7878
+
+You stole: grain from: Oakes#7878
+
+
+Tami#6966 rolled: dice_6 dice_5
+
+ZacTodd got:ore
+
+Tami#6966 got: brick brick
+
+Oakes#7878 got:oreore brick
+
+Tami#6966 built a road
+
+
+Oakes#7878 rolled: dice_4 dice_6
+
+Tami#6966 got: grain grainore
+
+Oakes#7878 got: grain grain
+
+Oakes#7878 wants to give: grain grain for: ore
+
+ZacTodd wants to give Oakes#7878 : ore for: grain wool
+
+Oakes#7878 wants to give: grain brick for: ore
+
+Oakes#7878 traded with: ZacTodd
+
+Oakes#7878 built a city
+
+
+ZacTodd rolled: dice_6 dice_5
+
+ZacTodd got:ore
+
+Tami#6966 got: brick brick
+
+Oakes#7878 got:oreore brick brick
+
+ZacTodd wants to give: grain for: wool
+
+
+bambee rolled: dice_3 dice_6
+
+ZacTodd got: lumber
+
+Tami#6966 got:oreoreore
+
+bambee got:ore
+
+Oakes#7878 got: lumber lumber
+
+bambee bought development card
+
+
+Tami#6966 rolled: dice_6 dice_2
+
+ZacTodd got: wool
+
+Tami#6966 got: lumber
+
+bambee got: wool
+
+Tami#6966 built a settlement
+
+Tami#6966 built a city
+
+
+Oakes#7878 rolled: dice_6 dice_5
+
+ZacTodd got:ore
+
+Tami#6966 got: brick brick
+
+Oakes#7878 got:oreore brick brick
+
+Oakes#7878 wants to give: brick for: lumber
+
+Oakes#7878 wants to give: ore for: lumber
+
+Oakes#7878 wants to give: ore for: grain
+
+Oakes#7878 traded with: ZacTodd
+
+Oakes#7878 built a city
+
+Oakes#7878 built a road
+
+Oakes#7878 built a road
+
+
+ZacTodd rolled: dice_2 dice_5
+
+ZacTodd has: 9 card. Needs to discard: 4 card
+
+ZacTodd discarded: grain grainoreore
+
+ZacTodd moved robberto tile: 18
+
+ZacTodd stole card from: Oakes#7878
+
+ZacTodd built a settlement
+
+
+bambee rolled: dice_6 dice_1
+
+bambee moved robberto tile: 8
+
+bambee stole card from: Oakes#7878
+
+You stole: brick from: Oakes#7878
+
+bambee used monopoly & stole all of: brick
+
+bambee gave bank: brick brick brick brick and took lumber
+
+bambee built a settlement
+
+
+Tami#6966 rolled: dice_2 dice_5
+
+Tami#6966 moved robberto tile: 18
+
+Tami#6966 could not steal card from : Oakes#7878
+
+
+Oakes#7878 rolled: dice_3 dice_6
+
+ZacTodd got: lumber
+
+Tami#6966 got:oreoreoreore
+
+bambee got:ore
+
+Oakes#7878 got: lumber lumber
+
+
+ZacTodd rolled: dice_5 dice_3
+
+ZacTodd got: wool wool
+
+Tami#6966 got: lumber lumber
+
+bambee got: wool lumber
+
+
+bambee rolled: dice_5 dice_4
+
+ZacTodd got: lumber
+
+Tami#6966 got:oreoreoreore
+
+bambee got:ore
+
+Oakes#7878 got: lumber lumber
+
+bambee built a road
+
+
+Tami#6966 rolled: dice_1 dice_6
+
+Tami#6966 has: 11 card. Needs to discard: 5 card
+
+Tami#6966 discarded:oreoreoreoreore
+
+Tami#6966 moved robberto tile: 17
+
+Tami#6966 stole card from: Oakes#7878
+
+Tami#6966 wants to give: oreore for: brick
+
+Tami#6966 gave bank: oreoreoreore and took brick
+
+Tami#6966 built a road
+
+
+Oakes#7878 rolled: dice_2 dice_2
+
+ZacTodd got: wool
+
+Tami#6966 got: wool
+
+Oakes#7878 got: grain grain
+
+
+ZacTodd rolled: dice_6 dice_6
+
+Oakes#7878 got: wool wool
+
+ZacTodd wants to give: wool for: grain
+
+ZacTodd wants to give: lumber for: grain
+
+ZacTodd wants to give: lumber lumber for: grain
+
+
+bambee rolled: dice_5 dice_2
+
+bambee moved robberto tile: 9
+
+bambee stole card from: Tami#6966
+
+You stole: wool from: Tami#6966
+
+bambee wants to give: wool for: grain
+
+
+Tami#6966 rolled: dice_1 dice_6
+
+Tami#6966 moved robberto tile: 11
+
+Tami#6966 stole card from: bambee
+
+Tami#6966 stole: wool
+
+
+Oakes#7878 rolled: dice_2 dice_1
+
+ZacTodd got: lumber
+
+Tami#6966 got: lumber lumber
+
+
+ZacTodd rolled: dice_1 dice_3
+
+ZacTodd got: wool
+
+Tami#6966 got: wool
+
+Oakes#7878 got: grain grain
+
+ZacTodd wants to give: lumber for: grain
+
+ZacTodd wants to give: wool for: grain
+
+
+bambee rolled: dice_2 dice_1
+
+ZacTodd got: lumber
+
+Tami#6966 got: lumber lumber
+
+
+Tami#6966 rolled: dice_4 dice_4
+
+ZacTodd got: wool wool
+
+Tami#6966 got: lumber lumber
+
+bambee got: wool lumber
+
+Tami#6966 wants to give: lumber lumber lumber lumber for: brick
+
+Tami#6966 gave bank: lumber lumber lumber lumber and took brick brick
+
+Tami#6966 built a road
+
+Tami#6966 built a road
+
+Tami#6966 received longest road
+
+
+Oakes#7878 rolled: dice_5 dice_2
+
+ZacTodd has: 11 card. Needs to discard: 5 card
+
+Oakes#7878 has: 9 card. Needs to discard: 4 card
+
+ZacTodd discarded: lumber lumber lumber lumber wool
+
+Oakes#7878 discarded: grain grain grain lumber
+
+Oakes#7878 moved robberto tile: 10
+
+Oakes#7878 stole card from: Tami#6966
+
+
+ZacTodd rolled: dice_3 dice_5
+
+ZacTodd got: wool wool
+
+Tami#6966 got: lumber lumber
+
+bambee got: wool lumber
+
+ZacTodd gave bank: wool wool wool wool and took grain
+
+ZacTodd bought development card
+
+
+bambee rolled: dice_4 dice_2
+
+Tami#6966 got: brick
+
+bambee got: grain
+
+Oakes#7878 got: brick brick brick brick grain
+
+bambee built a settlement
+
+
+Tami#6966 rolled: dice_1 dice_4
+
+ZacTodd got: grain
+
+Tami#6966 got: grain
+
+Oakes#7878 got: lumber lumber lumber
+
+Tami#6966 gave bank: lumber lumber and took brick
+
+Tami#6966 built a road
+
+Tami#6966 built a road
+
+
+Oakes#7878 rolled: dice_6 dice_3
+
+ZacTodd got: lumber
+
+Oakes#7878 got: lumber lumber
+
+Oakes#7878 built a road
+
+Oakes#7878 built a road
+
+Oakes#7878 built a settlement
+
+Oakes#7878 built a settlement
+
+
+ZacTodd rolled: dice_1 dice_4
+
+ZacTodd got: grain
+
+Tami#6966 got: grain
+
+Oakes#7878 got: lumber lumber lumber
+
+ZacTodd used monopoly & stole all of:ore
+
+ZacTodd bought development card
+
+ZacTodd bought development card
+
+
+bambee rolled: dice_1 dice_3
+
+ZacTodd got: wool
+
+Tami#6966 got: wool
+
+Oakes#7878 got: grain grain grain
+
+
+Tami#6966 rolled: dice_1 dice_1
+
+bambee got: wool wool
+
+
+Oakes#7878 rolled: dice_1 dice_1
+
+bambee got: wool wool
+
+Oakes#7878 gave bank: grain grain and took brick
+
+Oakes#7878 built a road
+
+Oakes#7878 gave bank: lumber lumber lumber lumber and took brick
+
+Oakes#7878 built a road
+
+
+ZacTodd used knight
+
+ZacTodd moved robberto tile: 8
+
+ZacTodd stole card from: Oakes#7878
+
+ZacTodd rolled: dice_5 dice_3
+
+ZacTodd got: wool wool
+
+Tami#6966 got: lumber lumber
+
+bambee got: wool lumber
+
+
+bambee rolled: dice_5 dice_1
+
+bambee got: grain
+
+Oakes#7878 got: grain
+
+bambee gave bank: wool wool and took grain
+
+bambee gave bank: wool wool and took ore
+
+bambee wants to give: lumber for: wool
+
+bambee wants to give: lumber lumber for: wool
+
+bambee bought development card
+
+
+Tami#6966 rolled: dice_4 dice_5
+
+ZacTodd got: lumber
+
+Tami#6966 got:oreoreoreore
+
+bambee got:ore
+
+Oakes#7878 got: lumber lumber
+
+Tami#6966 built a city
+
+Tami#6966 gave bank: lumber lumber and took grain
+
+Tami#6966 bought development card
+
+
+Oakes#7878 rolled: dice_3 dice_3
+
+bambee got: grain
+
+Oakes#7878 got: grain
+
+Oakes#7878 wants to give: lumber for: wool
+
+
+ZacTodd used knight
+
+ZacTodd received largest army
+
+ZacTodd moved robberto tile: 10
+
+ZacTodd stole card from: Tami#6966
+
+ZacTodd rolled: dice_1 dice_2
+
+ZacTodd got: lumber
+
+Tami#6966 got: lumber lumber
+
+bambee got: brick brick
+
+ZacTodd wants to give: wool for: lumber
+
+ZacTodd wants to give: wool wool for: lumber
+
+ZacTodd traded with: bambee
+
+ZacTodd gave bank: lumber lumber lumber lumber and took ore
+
+ZacTodd bought development card
+
+
+bambee rolled: dice_6 dice_2
+
+ZacTodd got: wool wool
+
+Tami#6966 got: lumber lumber
+
+bambee got: wool lumber
+
+bambee gave bank: wool wool and took ore
+
+bambee bought development card
+
+bambee bought development card
+
+bambee used knight
+
+bambee moved robberto tile: 8
+
+bambee stole card from: Oakes#7878
+
+You stole: lumber from: Oakes#7878
+
+bambee built a road
+
+bambee built a road
+
+
+Tami#6966 rolled: dice_4 dice_6
+
+Tami#6966 got: grain grainoreoreore
+
+Oakes#7878 got: grain grainore
+
+Tami#6966 built a city
+
+
+trophy Tami#6966 won the game! trophy
+
+
+Oakes#7878 has left the game chat
+
+ZacTodd has left the game chat
+
+Tami#6966 has left the game chat

@@ -1,0 +1,1451 @@
+Disable chat with "/disablechat" /help for more commands
+
+Type "/help" for more commands
+
+Karma System: Active. Leavers will receive a karma penalty
+
+
+SS445#7773 turn to place settlement
+
+SS445#7773 placed a settlement
+
+SS445#7773 turn to place road
+
+SS445#7773 placed a road
+
+
+CardestHock turn to place settlement
+
+CardestHock placed a settlement
+
+CardestHock turn to place road
+
+CardestHock placed a road
+
+
+ZacTodd turn to place settlement
+
+ZacTodd placed a settlement
+
+ZacTodd turn to place road
+
+ZacTodd placed a road
+
+
+bambee turn to place settlement
+
+bambee placed a settlement
+
+bambee turn to place road
+
+bambee placed a road
+
+
+bambee turn to place settlement
+
+Karma System: You can leave the game freely without a karma penalty
+
+SS445#7773 has disconnected, a bot will continue the game. Bot will wait a little to give SS445#7773 a chance to join back
+
+Karma System: Active again. You will receive a karma penalty if you leave the game
+
+SS445#7773 has reconnected!
+
+bambee placed a settlement
+
+bambee turn to place road
+
+bambee placed a road
+
+
+ZacTodd turn to place settlement
+
+ZacTodd placed a settlement
+
+ZacTodd turn to place road
+
+ZacTodd placed a road
+
+
+CardestHock turn to place settlement
+
+CardestHock placed a settlement
+
+CardestHock turn to place road
+
+CardestHock placed a road
+
+
+SS445#7773 turn to place settlement
+
+SS445#7773 placed a settlement
+
+SS445#7773 turn to place road
+
+SS445#7773 placed a road
+
+
+Giving out starting resources
+
+bambee got: wool brick wool
+
+ZacTodd got: lumber grain brick
+
+SS445#7773 got: lumber lumberore
+
+CardestHock got: grain wool brick
+
+
+SS445#7773 rolled: dice_3 dice_5
+
+ZacTodd got:ore
+
+SS445#7773 got:oreore
+
+CardestHock got: grain
+
+SS445#7773 wants to give: lumber for: brick
+
+SS445#7773 wants to give: ore lumber for: brick
+
+SS445#7773 traded with: CardestHock
+
+SS445#7773 built a road
+
+
+CardestHock rolled: dice_5 dice_2
+
+CardestHock moved robberto tile: 3
+
+CardestHock stole card from: ZacTodd
+
+CardestHock stole: grain
+
+CardestHock bought development card
+
+
+ZacTodd rolled: dice_6 dice_3
+
+SS445#7773 got: lumber
+
+CardestHock got: lumber
+
+ZacTodd built a road
+
+
+bambee rolled: dice_1 dice_3
+
+ZacTodd got: grain
+
+CardestHock got: wool
+
+
+SS445#7773 rolled: dice_4 dice_6
+
+bambee got: wool
+
+SS445#7773 got:ore
+
+
+CardestHock rolled: dice_6 dice_2
+
+ZacTodd got:ore
+
+SS445#7773 got:oreore
+
+CardestHock got: grain
+
+CardestHock wants to give: grain for: ore
+
+CardestHock wants to give: grain for: brick
+
+CardestHock wants to give: wool for: brick
+
+CardestHock traded with: SS445#7773
+
+CardestHock bought development card
+
+
+ZacTodd rolled: dice_1 dice_5
+
+bambee got: grain
+
+CardestHock got: brick
+
+ZacTodd wants to give: ore for: wool
+
+
+bambee rolled: dice_4 dice_3
+
+bambee moved robberto tile: 14
+
+bambee stole card from: SS445#7773
+
+bambee wants to give: wool for: ore
+
+bambee traded with: ZacTodd
+
+bambee bought development card
+
+bambee built a road
+
+
+SS445#7773 rolled: dice_2 dice_6
+
+CardestHock got: grain
+
+SS445#7773 wants to give: ore for: wool
+
+
+CardestHock rolled: dice_5 dice_5
+
+bambee got: wool
+
+SS445#7773 got:ore
+
+CardestHock used knight
+
+CardestHock moved robberto tile: 3
+
+CardestHock stole card from: ZacTodd
+
+CardestHock stole: grain
+
+CardestHock built a road
+
+CardestHock wants to give: grain for: wool
+
+
+ZacTodd rolled: dice_2 dice_6
+
+ZacTodd got:ore
+
+SS445#7773 got:oreore
+
+CardestHock got: grain
+
+ZacTodd wants to give: ore for: grain
+
+
+bambee used knight
+
+bambee moved robberto tile: 14
+
+bambee stole card from: SS445#7773
+
+bambee rolled: dice_3 dice_4
+
+bambee moved robberto tile: 11
+
+bambee stole card from: CardestHock
+
+bambee bought development card
+
+
+SS445#7773 rolled: dice_1 dice_3
+
+ZacTodd got: grain
+
+CardestHock got: wool
+
+SS445#7773 wants to give: ore for: wool
+
+ZacTodd wants to give SS445#7773 : wool for: ore grain
+
+SS445#7773 wants to give: oreore for: wool
+
+ZacTodd wants to give SS445#7773 : wool for: oreore lumber lumber
+
+SS445#7773 gave bank: oreoreoreore and took wool
+
+SS445#7773 bought development card
+
+
+CardestHock rolled: dice_6 dice_5
+
+SS445#7773 got: lumber
+
+CardestHock got: brick
+
+CardestHock built a settlement
+
+CardestHock used knight
+
+CardestHock moved robberto tile: 3
+
+CardestHock stole card from: ZacTodd
+
+CardestHock stole: grain
+
+
+ZacTodd rolled: dice_6 dice_6
+
+bambee got: wool
+
+ZacTodd wants to give: ore for: grain
+
+
+bambee rolled: dice_6 dice_1
+
+bambee moved robberto tile: 14
+
+bambee stole card from: SS445#7773
+
+bambee wants to give: wool for: grain
+
+
+SS445#7773 used knight
+
+SS445#7773 moved robberto tile: 3
+
+SS445#7773 stole card from: ZacTodd
+
+SS445#7773 stole:ore
+
+SS445#7773 rolled: dice_2 dice_3
+
+ZacTodd got: lumber
+
+CardestHock got: lumber
+
+
+CardestHock rolled: dice_4 dice_4
+
+ZacTodd got:ore
+
+SS445#7773 got:oreore
+
+CardestHock got: grain
+
+CardestHock gave bank: grain grain grain grain and took brick
+
+CardestHock built a road
+
+
+ZacTodd rolled: dice_4 dice_2
+
+bambee got: grain
+
+CardestHock got: brick
+
+ZacTodd wants to give: lumber for: grain
+
+
+bambee rolled: dice_6 dice_5
+
+SS445#7773 got: lumber
+
+CardestHock got: brick
+
+bambee bought development card
+
+
+SS445#7773 rolled: dice_6 dice_3
+
+SS445#7773 got: lumber
+
+CardestHock got: lumber
+
+
+CardestHock rolled: dice_6 dice_1
+
+CardestHock moved robberto tile: 8
+
+CardestHock stole card from: ZacTodd
+
+CardestHock stole:ore
+
+CardestHock built a road
+
+
+ZacTodd rolled: dice_1 dice_4
+
+ZacTodd got: lumber
+
+CardestHock got: lumber
+
+
+bambee rolled: dice_1 dice_2
+
+ZacTodd got: wool
+
+CardestHock got: wool
+
+
+SS445#7773 rolled: dice_4 dice_1
+
+ZacTodd got: lumber
+
+CardestHock got: lumber
+
+SS445#7773 wants to give: lumber for: ore
+
+
+CardestHock rolled: dice_1 dice_6
+
+Bot is selecting where to place robber for CardestHock
+
+CardestHock moved robberto tile: 14
+
+Bot is selecting who to rob for CardestHock
+
+CardestHock stole card from: SS445#7773
+
+CardestHock built a road
+
+
+ZacTodd rolled: dice_1 dice_6
+
+ZacTodd moved robberto tile: 2
+
+ZacTodd stole card from: CardestHock
+
+You stole:ore from: CardestHock
+
+
+bambee rolled: dice_6 dice_5
+
+SS445#7773 got: lumber
+
+CardestHock got: brick
+
+
+SS445#7773 rolled: dice_6 dice_3
+
+bambee got: brick
+
+ZacTodd got: brick
+
+SS445#7773 got: lumber
+
+CardestHock got: lumber
+
+SS445#7773 wants to give: ore for: lumber lumber
+
+SS445#7773 wants to give: oreore for: lumber lumber
+
+SS445#7773 wants to give: ore for: lumber
+
+ZacTodd wants to give SS445#7773 : lumber lumber for: oreore
+
+SS445#7773 wants to give: oreore for: lumber lumber
+
+SS445#7773 traded with: ZacTodd
+
+SS445#7773 gave bank: lumber lumber lumber lumber and took brick
+
+SS445#7773 built a road
+
+
+CardestHock rolled: dice_6 dice_1
+
+ZacTodd has: 8 card. Needs to discard: 4 card
+
+ZacTodd discarded: wooloreoreore
+
+CardestHock moved robberto tile: 3
+
+CardestHock stole card from: ZacTodd
+
+CardestHock stole: wool
+
+CardestHock built a road
+
+CardestHock received longest road
+
+
+ZacTodd rolled: dice_1 dice_5
+
+bambee got: grain
+
+CardestHock got: brick
+
+ZacTodd wants to give: lumber brick for: wool grain
+
+ZacTodd traded with: bambee
+
+ZacTodd bought development card
+
+
+bambee used knight
+
+bambee moved robberto tile: 14
+
+bambee stole card from: SS445#7773
+
+bambee rolled: dice_3 dice_2
+
+ZacTodd got: lumber
+
+CardestHock got: lumber
+
+bambee built a road
+
+bambee built a road
+
+
+SS445#7773 rolled: dice_4 dice_1
+
+ZacTodd got: lumber
+
+CardestHock got: lumber
+
+
+CardestHock rolled: dice_1 dice_1
+
+bambee got:ore
+
+SS445#7773 got:ore
+
+
+ZacTodd rolled: dice_1 dice_3
+
+ZacTodd got: grain
+
+CardestHock got: wool wool
+
+
+bambee rolled: dice_2 dice_3
+
+ZacTodd got: lumber
+
+CardestHock got: lumber
+
+bambee used monopoly & stole all of: lumber
+
+bambee gave bank: lumber lumber lumber lumber and took grain
+
+bambee gave bank: lumber lumber lumber lumber and took wool
+
+bambee bought development card
+
+
+SS445#7773 rolled: dice_4 dice_1
+
+ZacTodd got: lumber
+
+CardestHock got: lumber
+
+
+CardestHock rolled: dice_5 dice_1
+
+bambee got: grain
+
+CardestHock got: brick
+
+CardestHock wants to give: wool for: grain
+
+CardestHock wants to give: brick for: grain
+
+CardestHock gave bank: wool wool wool wool and took grain
+
+
+ZacTodd rolled: dice_4 dice_5
+
+bambee got: brick
+
+ZacTodd got: brick
+
+SS445#7773 got: lumber
+
+CardestHock got: lumber
+
+
+bambee rolled: dice_5 dice_6
+
+SS445#7773 got: lumber
+
+CardestHock got: brick
+
+
+SS445#7773 rolled: dice_3 dice_4
+
+SS445#7773 moved robberto tile: 11
+
+SS445#7773 stole card from: CardestHock
+
+SS445#7773 wants to give: ore for: brick
+
+SS445#7773 wants to give: lumber for: brick
+
+
+CardestHock rolled: dice_4 dice_3
+
+CardestHock moved robberto tile: 3
+
+CardestHock stole card from: ZacTodd
+
+CardestHock stole: brick
+
+
+ZacTodd rolled: dice_1 dice_4
+
+ZacTodd got: lumber
+
+CardestHock got: lumber
+
+
+bambee rolled: dice_1 dice_3
+
+ZacTodd got: grain
+
+CardestHock got: wool wool
+
+bambee wants to give: grain for: lumber
+
+SS445#7773 wants to give bambee : lumber for: brick
+
+bambee wants to give: grain for: lumber lumber brick
+
+bambee wants to give: grain for: lumber brick
+
+
+SS445#7773 rolled: dice_2 dice_5
+
+CardestHock has: 9 card. Needs to discard: 4 card
+
+CardestHock discarded: brick brick lumber wool
+
+SS445#7773 moved robberto tile: 2
+
+SS445#7773 stole card from: CardestHock
+
+SS445#7773 wants to give: lumber for: brick
+
+SS445#7773 wants to give: lumberore for: brick
+
+SS445#7773 wants to give: oreore for: brick
+
+
+CardestHock rolled: dice_1 dice_2
+
+bambee got: lumber
+
+ZacTodd got: lumber wool
+
+CardestHock got: wool
+
+
+ZacTodd rolled: dice_6 dice_5
+
+SS445#7773 got: lumber
+
+CardestHock got: brick
+
+ZacTodd wants to give: lumber for: brick
+
+ZacTodd wants to give: lumber grain for: brick
+
+
+bambee rolled: dice_5 dice_1
+
+bambee got: grain
+
+CardestHock got: brick
+
+bambee built a road
+
+
+SS445#7773 rolled: dice_3 dice_5
+
+ZacTodd got:ore
+
+SS445#7773 got:oreore
+
+SS445#7773 wants to give: ore for: wool
+
+SS445#7773 wants to give: ore for: grain
+
+bambee started an embargo against ZacTodd
+
+SS445#7773 traded with: CardestHock
+
+SS445#7773 wants to give: ore for: lumber
+
+SS445#7773 wants to give: oreore for: lumber
+
+SS445#7773 bought development card
+
+
+CardestHock rolled: dice_1 dice_5
+
+bambee got: grain
+
+CardestHock got: brick
+
+CardestHock gave bank: brick brick brick brick and took grain
+
+CardestHock built a settlement
+
+
+ZacTodd rolled: dice_2 dice_1
+
+bambee got: lumber
+
+ZacTodd got: lumber wool
+
+CardestHock got: wool
+
+ZacTodd wants to give SS445#7773 & CardestHock : ore for: lumber
+
+ZacTodd bought development card
+
+ZacTodd wants to give SS445#7773 & CardestHock : lumber for: ore
+
+ZacTodd traded with: SS445#7773
+
+ZacTodd bought development card
+
+
+bambee rolled: dice_6 dice_6
+
+bambee got: wool
+
+
+SS445#7773 rolled: dice_2 dice_5
+
+SS445#7773 moved robberto tile: 11
+
+SS445#7773 stole card from: CardestHock
+
+SS445#7773 wants to give: ore for: grain
+
+SS445#7773 wants to give: ore for: wool
+
+SS445#7773 traded with: CardestHock
+
+SS445#7773 gave bank: lumber lumber lumber lumber and took brick
+
+
+CardestHock rolled: dice_2 dice_4
+
+bambee got: grain
+
+
+ZacTodd rolled: dice_1 dice_1
+
+bambee got:ore
+
+SS445#7773 got:ore
+
+ZacTodd wants to give SS445#7773 & CardestHock : lumber for: grain
+
+ZacTodd wants to give SS445#7773 & CardestHock : lumber lumber for: grain
+
+bambee ended an embargo against ZacTodd
+
+ZacTodd used road building
+
+ZacTodd placed a road
+
+ZacTodd placed a road
+
+
+bambee rolled: dice_1 dice_5
+
+bambee got: grain
+
+bambee wants to give: grain for: brick
+
+bambee gave bank: grain grain grain grain and took brick
+
+bambee built a road
+
+bambee bought development card
+
+
+SS445#7773 rolled: dice_3 dice_4
+
+SS445#7773 moved robberto tile: 2
+
+SS445#7773 stole card from: CardestHock
+
+
+CardestHock rolled: dice_3 dice_1
+
+ZacTodd got: grain
+
+CardestHock got: wool wool
+
+
+ZacTodd rolled: dice_6 dice_6
+
+bambee got: wool
+
+ZacTodd wants to give: lumber for: wool
+
+ZacTodd used year of plenty
+
+ZacTodd took from bank: wool brick
+
+ZacTodd built a settlement
+
+
+bambee rolled: dice_6 dice_4
+
+bambee got: wool
+
+SS445#7773 got:ore
+
+CardestHock got: wool
+
+bambee wants to give: wool for: ore lumber brick
+
+
+SS445#7773 rolled: dice_5 dice_5
+
+bambee got: wool
+
+SS445#7773 got:ore
+
+CardestHock got: wool
+
+SS445#7773 gave bank: oreoreoreore and took grain
+
+SS445#7773 built a settlement
+
+
+CardestHock rolled: dice_1 dice_1
+
+bambee got:ore
+
+SS445#7773 got:ore
+
+CardestHock gave bank: wool wool and took ore
+
+CardestHock gave bank: wool wool and took grain
+
+
+ZacTodd rolled: dice_2 dice_4
+
+bambee got: grain
+
+ZacTodd got: grain
+
+SS445#7773 got: grain
+
+CardestHock got: brick brick
+
+
+bambee rolled: dice_2 dice_5
+
+bambee moved robberto tile: 14
+
+bambee stole card from: ZacTodd
+
+bambee stole: lumber
+
+bambee bought development card
+
+bambee wants to give: wool for: brick
+
+bambee traded with: CardestHock
+
+
+SS445#7773 used knight
+
+SS445#7773 moved robberto tile: 11
+
+SS445#7773 stole card from: CardestHock
+
+SS445#7773 rolled: dice_3 dice_1
+
+ZacTodd got: grain grain
+
+CardestHock got: wool wool
+
+SS445#7773 bought development card
+
+
+CardestHock rolled: dice_5 dice_1
+
+bambee got: grain
+
+ZacTodd got: grain
+
+SS445#7773 got: grain
+
+CardestHock bought development card
+
+
+ZacTodd rolled: dice_3 dice_4
+
+ZacTodd moved robberto tile: 5
+
+ZacTodd stole card from: CardestHock
+
+You stole: brick from: CardestHock
+
+ZacTodd wants to give: grain for: wool
+
+ZacTodd traded with: CardestHock
+
+ZacTodd built a settlement
+
+
+bambee rolled: dice_2 dice_4
+
+bambee got: grain
+
+ZacTodd got: grain
+
+SS445#7773 got: grain
+
+CardestHock got: brick brick
+
+bambee built a settlement
+
+
+SS445#7773 used knight
+
+SS445#7773 received largest army
+
+SS445#7773 moved robberto tile: 11
+
+SS445#7773 stole card from: CardestHock
+
+SS445#7773 rolled: dice_3 dice_1
+
+ZacTodd got: grain grain
+
+CardestHock got: wool wool
+
+SS445#7773 wants to give: grain for: wool
+
+
+CardestHock rolled: dice_5 dice_5
+
+bambee got: wool
+
+SS445#7773 got:ore
+
+CardestHock got: wool
+
+CardestHock gave bank: wool wool and took lumber
+
+CardestHock wants to give: brick for: grain
+
+CardestHock built a road
+
+CardestHock used knight
+
+CardestHock moved robberto tile: 14
+
+CardestHock stole card from: ZacTodd
+
+CardestHock stole: grain
+
+
+ZacTodd rolled: dice_3 dice_2
+
+ZacTodd got: lumber
+
+SS445#7773 got: grain
+
+CardestHock got: lumber
+
+ZacTodd gave bank: grain grain and took brick
+
+ZacTodd gave bank: grain grain and took wool
+
+ZacTodd built a road
+
+
+bambee rolled: dice_3 dice_6
+
+bambee got: brick
+
+ZacTodd got: brick brick
+
+SS445#7773 got: lumber
+
+CardestHock got: lumber
+
+bambee wants to give: wool for: lumber
+
+SS445#7773 has disconnected, a bot will continue the game. Bot will wait a little to give SS445#7773 a chance to join back
+
+Karma System: Active again. You will receive a karma penalty if you leave the game
+
+SS445#7773 has reconnected!
+
+bambee wants to give: wool for: lumber
+
+
+SS445#7773 rolled: dice_4 dice_4
+
+bambee got: grain
+
+CardestHock got: grain
+
+SS445#7773 wants to give: lumber for: wool
+
+SS445#7773 wants to give: lumber for: wool
+
+bambee wants to give SS445#7773 : wool for: lumber lumber
+
+ZacTodd wants to give SS445#7773 : brick for: ore
+
+SS445#7773 wants to give: lumber for: wool
+
+SS445#7773 traded with: bambee
+
+SS445#7773 bought development card
+
+
+CardestHock rolled: dice_6 dice_6
+
+bambee got: wool
+
+CardestHock built a settlement
+
+
+ZacTodd rolled: dice_1 dice_3
+
+ZacTodd got: grain grain
+
+CardestHock got: wool wool wool
+
+ZacTodd wants to give: brick brick for: ore
+
+ZacTodd traded with: SS445#7773
+
+ZacTodd bought development card
+
+
+bambee rolled: dice_6 dice_4
+
+bambee got: wool
+
+SS445#7773 got:ore
+
+CardestHock got: wool
+
+bambee built a settlement
+
+
+SS445#7773 rolled: dice_1 dice_1
+
+bambee got:ore
+
+SS445#7773 got:ore
+
+SS445#7773 wants to give: grain for: ore
+
+SS445#7773 used year of plenty
+
+SS445#7773 took from bank: wool wool
+
+SS445#7773 bought development card
+
+SS445#7773 bought development card
+
+
+CardestHock rolled: dice_6 dice_4
+
+bambee got: wool
+
+SS445#7773 got:ore
+
+CardestHock got: wool
+
+CardestHock gave bank: wool wool wool wool and took brick brick
+
+CardestHock built a road
+
+
+ZacTodd rolled: dice_6 dice_6
+
+bambee got: wool wool
+
+ZacTodd used road building
+
+ZacTodd placed a road
+
+ZacTodd placed a road
+
+
+bambee rolled: dice_3 dice_5
+
+bambee got: grain
+
+CardestHock got: grain
+
+bambee bought development card
+
+bambee used knight
+
+bambee moved robberto tile: 9
+
+bambee stole card from: CardestHock
+
+bambee wants to give: wool for: ore
+
+
+SS445#7773 rolled: dice_3 dice_2
+
+SS445#7773 got: grain
+
+SS445#7773 used knight
+
+SS445#7773 moved robberto tile: 2
+
+SS445#7773 stole card from: bambee
+
+
+CardestHock rolled: dice_4 dice_1
+
+ZacTodd got: lumber
+
+SS445#7773 got: grain
+
+CardestHock got: lumber
+
+CardestHock built a road
+
+
+ZacTodd rolled: dice_6 dice_1
+
+ZacTodd moved robberto tile: 11
+
+ZacTodd stole card from: CardestHock
+
+You stole: grain from: CardestHock
+
+
+bambee used knight
+
+bambee moved robberto tile: 14
+
+bambee stole card from: SS445#7773
+
+bambee rolled: dice_6 dice_3
+
+bambee got: brick
+
+ZacTodd got: brick brick
+
+SS445#7773 got: lumber
+
+CardestHock got: lumber
+
+bambee wants to give: brick for: ore
+
+bambee wants to give: brick for: wool
+
+bambee gave bank: wool wool wool and took lumber
+
+bambee built a road
+
+
+SS445#7773 rolled: dice_1 dice_2
+
+bambee got: lumber
+
+ZacTodd got: lumber wool
+
+CardestHock got: wool wool
+
+SS445#7773 used monopoly & stole all of: lumber
+
+SS445#7773 built a road
+
+SS445#7773 gave bank: lumber lumber and took wool
+
+SS445#7773 built a settlement
+
+
+CardestHock rolled: dice_6 dice_6
+
+bambee got: wool wool
+
+CardestHock gave bank: wool wool and took ore
+
+
+ZacTodd rolled: dice_1 dice_3
+
+ZacTodd got: grain grain
+
+CardestHock got: wool wool wool
+
+ZacTodd gave bank: grain grain and took lumber
+
+ZacTodd built a settlement
+
+
+bambee rolled: dice_1 dice_6
+
+bambee moved robberto tile: 11
+
+bambee stole card from: CardestHock
+
+bambee wants to give: wool for: ore
+
+bambee wants to give: wool for: ore
+
+bambee wants to give: wool grain for: ore
+
+bambee wants to give: grain for: wool
+
+ZacTodd started an embargo against bambee
+
+
+SS445#7773 rolled: dice_5 dice_1
+
+bambee got: grain
+
+ZacTodd got: grain
+
+SS445#7773 got: grain
+
+SS445#7773 wants to give: grain for: wool
+
+ZacTodd ended an embargo against bambee
+
+SS445#7773 wants to give: lumber for: wool
+
+SS445#7773 traded with: bambee
+
+SS445#7773 bought development card
+
+
+CardestHock rolled: dice_4 dice_2
+
+bambee got: grain
+
+ZacTodd got: grain
+
+SS445#7773 got: grain
+
+CardestHock gave bank: wool wool and took grain
+
+CardestHock bought development card
+
+
+ZacTodd rolled: dice_6 dice_1
+
+ZacTodd moved robberto tile: 2
+
+ZacTodd stole card from: bambee
+
+You stole: grain from: bambee
+
+ZacTodd gave bank: grain grain and took lumber
+
+ZacTodd built a road
+
+
+bambee rolled: dice_2 dice_1
+
+bambee got: lumber
+
+ZacTodd got: lumber wool
+
+CardestHock got: wool wool
+
+bambee gave bank: grain grain grain and took ore
+
+bambee bought development card
+
+
+SS445#7773 rolled: dice_1 dice_6
+
+SS445#7773 moved robberto tile: 5
+
+SS445#7773 stole card from: CardestHock
+
+SS445#7773 wants to give: grain for: lumber
+
+SS445#7773 traded with: ZacTodd
+
+SS445#7773 gave bank: lumber lumber and took ore
+
+SS445#7773 bought development card
+
+
+CardestHock rolled: dice_5 dice_3
+
+bambee got: grain
+
+ZacTodd got:ore
+
+SS445#7773 got:oreore
+
+CardestHock got: grain
+
+CardestHock used knight
+
+CardestHock moved robberto tile: 14
+
+CardestHock stole card from: ZacTodd
+
+CardestHock stole: wool
+
+
+ZacTodd rolled: dice_4 dice_6
+
+bambee got: wool
+
+SS445#7773 got:oreore
+
+CardestHock got: wool
+
+ZacTodd gave bank: grain grain and took wool
+
+ZacTodd bought development card
+
+
+bambee rolled: dice_1 dice_6
+
+bambee moved robberto tile: 11
+
+bambee stole card from: CardestHock
+
+bambee gave bank: wool wool wool and took brick
+
+bambee built a road
+
+
+SS445#7773 rolled: dice_5 dice_1
+
+bambee got: grain
+
+ZacTodd got: grain
+
+SS445#7773 got: grain
+
+SS445#7773 used knight
+
+SS445#7773 moved robberto tile: 9
+
+SS445#7773 stole card from: ZacTodd
+
+SS445#7773 stole: grain
+
+SS445#7773 built a city
+
+
+CardestHock rolled: dice_4 dice_6
+
+bambee got: wool
+
+SS445#7773 got:oreore
+
+CardestHock got: wool
+
+CardestHock gave bank: wool wool and took ore
+
+
+ZacTodd used knight
+
+ZacTodd moved robberto tile: 16
+
+ZacTodd stole card from: SS445#7773
+
+You stole:ore from: SS445#7773
+
+ZacTodd rolled: dice_4 dice_6
+
+bambee got: wool
+
+SS445#7773 got:oreore
+
+CardestHock got: wool
+
+
+bambee rolled: dice_6 dice_3
+
+bambee got: brick
+
+ZacTodd got: brick brick
+
+SS445#7773 got: lumber
+
+CardestHock got: lumber
+
+bambee wants to give: grain wool for: lumber
+
+bambee wants to give: wool for: grain
+
+
+SS445#7773 rolled: dice_5 dice_1
+
+bambee got: grain
+
+ZacTodd got: grain
+
+SS445#7773 got: grain grain
+
+CardestHock got: brick brick
+
+SS445#7773 built a city
+
+
+CardestHock rolled: dice_2 dice_6
+
+bambee got: grain
+
+ZacTodd got:ore
+
+SS445#7773 got:oreoreore
+
+CardestHock got: grain
+
+CardestHock wants to give: brick brick for: ore
+
+CardestHock wants to give: wool wool for: oreore
+
+CardestHock gave bank: wool wool and took ore
+
+
+ZacTodd rolled: dice_4 dice_2
+
+bambee got: grain
+
+ZacTodd got: grain
+
+SS445#7773 got: grain grain
+
+CardestHock got: brick brick
+
+ZacTodd wants to give: brick brick for: ore
+
+
+bambee rolled: dice_3 dice_6
+
+bambee got: brick
+
+ZacTodd got: brick brick
+
+SS445#7773 got: lumber
+
+CardestHock got: lumber
+
+bambee gave bank: grain grain grain and took lumber
+
+bambee built a road
+
+longest road has passed from: CardestHock to: bambee
+
+
+SS445#7773 rolled: dice_2 dice_4
+
+bambee got: grain
+
+ZacTodd got: grain
+
+SS445#7773 got: grain grain
+
+CardestHock got: brick brick
+
+SS445#7773 built a city
+
+
+trophy SS445#7773 won the game! trophy
+
+
+CardestHock has left the game chat
+
+SS445#7773 has left the game chat
+
+Thank you for playing. Game is closed, cannot create a rematch anymore

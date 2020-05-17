@@ -1,0 +1,1045 @@
+Disable chat with "/disablechat" /help for more commands
+
+Type "/help" for more commands
+
+Karma System: Active. Leavers will receive a karma penalty
+
+
+ZacTodd turn to place settlement
+
+ZacTodd placed a settlement
+
+ZacTodd turn to place road
+
+ZacTodd placed a road
+
+
+uudwhuq61821 turn to place settlement
+
+uudwhuq61821 placed a settlement
+
+uudwhuq61821 turn to place road
+
+uudwhuq61821 placed a road
+
+
+Palmen turn to place settlement
+
+Palmen placed a settlement
+
+Palmen turn to place road
+
+Palmen placed a road
+
+
+RaivisSh turn to place settlement
+
+RaivisSh placed a settlement
+
+RaivisSh turn to place road
+
+RaivisSh placed a road
+
+
+RaivisSh turn to place settlement
+
+RaivisSh placed a settlement
+
+RaivisSh turn to place road
+
+RaivisSh placed a road
+
+
+Palmen turn to place settlement
+
+Palmen placed a settlement
+
+Palmen turn to place road
+
+Palmen placed a road
+
+
+uudwhuq61821 turn to place settlement
+
+uudwhuq61821 placed a settlement
+
+uudwhuq61821 turn to place road
+
+uudwhuq61821 placed a road
+
+
+ZacTodd turn to place settlement
+
+ZacTodd placed a settlement
+
+ZacTodd turn to place road
+
+ZacTodd placed a road
+
+
+Giving out starting resources
+
+ZacTodd got: lumber grain
+
+uudwhuq61821 got: grain brick
+
+RaivisSh got: lumberore brick
+
+Palmen got: grain woolore
+
+
+ZacTodd rolled: dice_5 dice_1
+
+RaivisSh got:ore
+
+Palmen got:ore
+
+
+uudwhuq61821 rolled: dice_5 dice_5
+
+uudwhuq61821 got: lumber
+
+RaivisSh got: lumber lumber
+
+
+Palmen rolled: dice_6 dice_5
+
+ZacTodd got: lumber
+
+Palmen got: grain
+
+Palmen bought development card
+
+
+RaivisSh rolled: dice_3 dice_2
+
+ZacTodd got: lumber
+
+uudwhuq61821 got: wool
+
+Palmen got: lumber
+
+RaivisSh built a road
+
+
+ZacTodd rolled: dice_5 dice_4
+
+ZacTodd got: grain
+
+RaivisSh got: grain
+
+
+uudwhuq61821 rolled: dice_5 dice_6
+
+ZacTodd got: lumber
+
+Palmen got: grain
+
+uudwhuq61821 built a road
+
+
+Palmen rolled: dice_4 dice_1
+
+ZacTodd got: lumber
+
+uudwhuq61821 got: wool
+
+Palmen got: lumber
+
+
+RaivisSh rolled: dice_2 dice_4
+
+RaivisSh got:ore
+
+Palmen got:ore
+
+
+ZacTodd rolled: dice_5 dice_2
+
+ZacTodd moved robberto tile: 12
+
+ZacTodd stole card from: uudwhuq61821
+
+You stole: wool from: uudwhuq61821
+
+ZacTodd wants to give: lumber for: ore
+
+ZacTodd wants to give: lumber lumber for: ore
+
+ZacTodd gave bank: lumber lumber lumber lumber and took ore
+
+ZacTodd bought development card
+
+
+uudwhuq61821 rolled: dice_6 dice_1
+
+uudwhuq61821 moved robberto tile: 14
+
+uudwhuq61821 stole card from: RaivisSh
+
+uudwhuq61821 bought development card
+
+
+Palmen rolled: dice_1 dice_3
+
+ZacTodd got: wool
+
+RaivisSh got: wool
+
+
+RaivisSh rolled: dice_4 dice_5
+
+ZacTodd got: grain
+
+RaivisSh got: grain
+
+RaivisSh wants to give: lumber for: ore
+
+
+ZacTodd rolled: dice_3 dice_6
+
+ZacTodd got: grain
+
+RaivisSh got: grain
+
+ZacTodd wants to give: grain for: ore
+
+ZacTodd wants to give: lumber for: ore
+
+
+uudwhuq61821 rolled: dice_2 dice_6
+
+ZacTodd got: brick
+
+uudwhuq61821 got: brickore
+
+Palmen got:ore
+
+
+Palmen rolled: dice_5 dice_3
+
+ZacTodd got: brick
+
+uudwhuq61821 got: brickore
+
+Palmen got:ore
+
+Palmen built a city
+
+
+RaivisSh rolled: dice_3 dice_5
+
+ZacTodd got: brick
+
+uudwhuq61821 got: brickore
+
+Palmen got:oreore
+
+RaivisSh wants to give: ore for: brick
+
+ZacTodd wants to give RaivisSh : brick for: ore lumber
+
+RaivisSh wants to give: grain for: ore
+
+RaivisSh traded with: uudwhuq61821
+
+RaivisSh built a city
+
+
+ZacTodd rolled: dice_6 dice_6
+
+Palmen got: brick brick
+
+ZacTodd wants to give: brick for: lumber
+
+ZacTodd traded with: RaivisSh
+
+ZacTodd built a road
+
+ZacTodd built a settlement
+
+
+uudwhuq61821 rolled: dice_4 dice_5
+
+ZacTodd got: grain
+
+RaivisSh got: grain
+
+
+Palmen rolled: dice_6 dice_2
+
+ZacTodd got: brick brick
+
+uudwhuq61821 got: brickore
+
+Palmen got:oreore
+
+Palmen wants to give: ore for: grain
+
+ZacTodd wants to give Palmen : grain for: oreore
+
+Palmen gave bank: oreoreoreore and took grain
+
+
+RaivisSh rolled: dice_2 dice_4
+
+RaivisSh got:oreore
+
+Palmen got:ore
+
+RaivisSh built a settlement
+
+
+ZacTodd rolled: dice_5 dice_5
+
+uudwhuq61821 got: lumber
+
+ZacTodd wants to give: grain for: lumber
+
+
+uudwhuq61821 rolled: dice_5 dice_5
+
+uudwhuq61821 got: lumber
+
+uudwhuq61821 wants to give: lumber for: brick
+
+uudwhuq61821 wants to give: brick for: grain
+
+uudwhuq61821 wants to give: brick brick for: grain
+
+uudwhuq61821 traded with: ZacTodd
+
+uudwhuq61821 built a city
+
+uudwhuq61821 used road building
+
+uudwhuq61821 placed a road
+
+uudwhuq61821 placed a road
+
+uudwhuq61821 built a road
+
+uudwhuq61821 built a road
+
+uudwhuq61821 received longest road
+
+
+Palmen rolled: dice_3 dice_1
+
+ZacTodd got: wool
+
+RaivisSh got: wool
+
+Palmen built a road
+
+Palmen built a road
+
+
+RaivisSh rolled: dice_3 dice_3
+
+RaivisSh got:oreoreore
+
+Palmen got:ore
+
+
+ZacTodd rolled: dice_2 dice_5
+
+ZacTodd moved robberto tile: 9
+
+ZacTodd stole card from: RaivisSh
+
+You stole:ore from: RaivisSh
+
+ZacTodd wants to give: brick for: ore
+
+ZacTodd traded with: Palmen
+
+ZacTodd wants to give: brick for: ore
+
+ZacTodd bought development card
+
+
+uudwhuq61821 rolled: dice_4 dice_2
+
+Palmen got:ore
+
+
+Palmen rolled: dice_6 dice_2
+
+ZacTodd got: brick brick
+
+uudwhuq61821 got: brickoreore
+
+Palmen got:oreore
+
+Palmen wants to give: ore for: wool
+
+
+RaivisSh rolled: dice_3 dice_6
+
+ZacTodd got: grain
+
+RaivisSh got: grain
+
+RaivisSh wants to give: ore for: grain
+
+
+ZacTodd rolled: dice_2 dice_3
+
+ZacTodd got: lumber
+
+uudwhuq61821 got: wool wool
+
+Palmen got: lumber lumber
+
+ZacTodd wants to give: brick for: oreore
+
+ZacTodd wants to give: brick for: ore
+
+ZacTodd gave bank: brick brick brick brick and took oreore
+
+ZacTodd built a city
+
+ZacTodd built a road
+
+
+uudwhuq61821 rolled: dice_4 dice_3
+
+Palmen has: 9 card. Needs to discard: 4 card
+
+Palmen discarded: lumberoreoreore
+
+uudwhuq61821 moved robberto tile: 2
+
+uudwhuq61821 stole card from: Palmen
+
+uudwhuq61821 wants to give: ore for: lumber
+
+uudwhuq61821 wants to give: wool for: lumber
+
+uudwhuq61821 wants to give: ore wool for: lumber
+
+
+Palmen rolled: dice_6 dice_4
+
+uudwhuq61821 got: lumber lumber
+
+RaivisSh got: lumber lumber lumber
+
+
+RaivisSh rolled: dice_5 dice_2
+
+uudwhuq61821 has: 8 card. Needs to discard: 4 card
+
+RaivisSh has: 9 card. Needs to discard: 4 card
+
+RaivisSh discarded:ore lumber lumber lumber
+
+uudwhuq61821 discarded: lumber wooloreore
+
+RaivisSh moved robberto tile: 12
+
+RaivisSh stole card from: uudwhuq61821
+
+
+ZacTodd rolled: dice_5 dice_5
+
+uudwhuq61821 got: lumber lumber
+
+RaivisSh got: lumber lumber lumber
+
+
+uudwhuq61821 rolled: dice_4 dice_5
+
+ZacTodd got: grain
+
+RaivisSh got: grain
+
+uudwhuq61821 wants to give: lumber lumber for: brick
+
+
+Palmen rolled: dice_5 dice_4
+
+ZacTodd got: grain
+
+RaivisSh got: grain
+
+
+RaivisSh rolled: dice_4 dice_5
+
+ZacTodd got: grain
+
+RaivisSh got: grain
+
+RaivisSh built a city
+
+RaivisSh built a road
+
+
+ZacTodd rolled: dice_4 dice_6
+
+uudwhuq61821 got: lumber lumber
+
+RaivisSh got: lumber lumber lumber lumber
+
+ZacTodd wants to give: grain for: lumber lumber
+
+
+uudwhuq61821 rolled: dice_4 dice_2
+
+RaivisSh got:oreoreore
+
+Palmen got:ore
+
+uudwhuq61821 gave bank: lumber lumber lumber lumber and took brick
+
+uudwhuq61821 built a settlement
+
+
+Palmen rolled: dice_4 dice_5
+
+ZacTodd got: grain
+
+RaivisSh got: grain grain
+
+
+RaivisSh rolled: dice_3 dice_3
+
+RaivisSh got:oreoreore
+
+Palmen got:ore
+
+RaivisSh built a city
+
+RaivisSh gave bank: lumber lumber lumber lumber and took brick
+
+RaivisSh built a settlement
+
+RaivisSh wants to give: lumber for: grain
+
+ZacTodd wants to give RaivisSh : grain for: lumber lumber
+
+
+ZacTodd rolled: dice_3 dice_1
+
+ZacTodd got: wool wool
+
+RaivisSh got: wool wool wool
+
+ZacTodd wants to give: grain for: ore
+
+ZacTodd traded with: Palmen
+
+ZacTodd bought development card
+
+
+uudwhuq61821 rolled: dice_6 dice_2
+
+ZacTodd got: brick brick brick
+
+uudwhuq61821 got: brick
+
+
+Palmen rolled: dice_2 dice_5
+
+RaivisSh has: 8 card. Needs to discard: 4 card
+
+RaivisSh discarded: wool wool wool lumber
+
+Palmen moved robberto tile: 9
+
+Palmen stole card from: RaivisSh
+
+Palmen wants to give: ore for: wool
+
+Palmen wants to give: oreore for: wool
+
+Palmen gave bank: oreoreoreore and took wool
+
+Palmen built a settlement
+
+
+RaivisSh rolled: dice_2 dice_5
+
+RaivisSh moved robberto tile: 12
+
+RaivisSh stole card from: uudwhuq61821
+
+
+ZacTodd used knight
+
+ZacTodd moved robberto tile: 9
+
+ZacTodd stole card from: RaivisSh
+
+You stole:ore from: RaivisSh
+
+ZacTodd rolled: dice_5 dice_4
+
+ZacTodd got: grain
+
+RaivisSh got: grain grain grain
+
+ZacTodd bought development card
+
+
+uudwhuq61821 rolled: dice_3 dice_2
+
+ZacTodd got: lumber
+
+uudwhuq61821 got: wool wool
+
+Palmen got: lumber lumber
+
+
+Palmen rolled: dice_2 dice_4
+
+Palmen got:ore
+
+
+RaivisSh rolled: dice_4 dice_4
+
+ZacTodd got: brick brick brick
+
+uudwhuq61821 got: brickoreore
+
+Palmen got:oreore
+
+
+ZacTodd rolled: dice_5 dice_1
+
+Palmen got:ore
+
+ZacTodd gave bank: brick brick and took lumber
+
+ZacTodd gave bank: brick brick and took wool
+
+ZacTodd built a road
+
+ZacTodd built a settlement
+
+
+uudwhuq61821 rolled: dice_1 dice_3
+
+ZacTodd got: wool wool wool
+
+RaivisSh got: wool wool wool
+
+uudwhuq61821 wants to give: brick for: grain
+
+uudwhuq61821 wants to give: ore for: grain
+
+uudwhuq61821 traded with: ZacTodd
+
+uudwhuq61821 bought development card
+
+
+Palmen rolled: dice_3 dice_1
+
+ZacTodd got: wool wool wool
+
+RaivisSh got: wool wool wool
+
+
+RaivisSh rolled: dice_4 dice_1
+
+ZacTodd got: lumber
+
+uudwhuq61821 got: wool wool
+
+Palmen got: lumber lumber
+
+RaivisSh wants to give: grain for: ore
+
+RaivisSh traded with: Palmen
+
+RaivisSh wants to give: wool for: ore
+
+RaivisSh traded with: Palmen
+
+RaivisSh built a city
+
+RaivisSh wants to give: wool for: lumber
+
+RaivisSh gave bank: wool wool wool wool and took lumber
+
+
+ZacTodd rolled: dice_5 dice_3
+
+ZacTodd got: brick brick brick
+
+uudwhuq61821 got: brickoreore
+
+Palmen got:oreore
+
+ZacTodd used knight
+
+ZacTodd moved robberto tile: 18
+
+ZacTodd stole card from: RaivisSh
+
+You stole: brick from: RaivisSh
+
+ZacTodd gave bank: brick brick and took grain
+
+ZacTodd bought development card
+
+ZacTodd gave bank: wool wool wool wool and took grain
+
+ZacTodd gave bank: brick brick and took ore
+
+ZacTodd bought development card
+
+
+uudwhuq61821 rolled: dice_3 dice_1
+
+ZacTodd got: wool wool wool
+
+uudwhuq61821 used knight
+
+uudwhuq61821 moved robberto tile: 9
+
+uudwhuq61821 stole card from: RaivisSh
+
+uudwhuq61821 wants to give: wool wool for: grain
+
+uudwhuq61821 wants to give: ore for: grain
+
+uudwhuq61821 wants to give: brick for: grain
+
+
+Palmen rolled: dice_4 dice_1
+
+ZacTodd got: lumber
+
+uudwhuq61821 got: wool wool
+
+Palmen got: lumber lumber
+
+Palmen wants to give: oreore for: brick
+
+Palmen gave bank: oreoreoreore and took brick
+
+Palmen built a road
+
+Palmen wants to give: lumber for: brick
+
+Palmen wants to give: lumber lumber for: brick
+
+Palmen traded with: uudwhuq61821
+
+Palmen built a settlement
+
+
+RaivisSh rolled: dice_5 dice_2
+
+uudwhuq61821 has: 10 card. Needs to discard: 5 card
+
+uudwhuq61821 discarded: wool wool wool wool wool
+
+RaivisSh moved robberto tile: 0
+
+RaivisSh stole card from: ZacTodd
+
+RaivisSh stole: wool
+
+
+ZacTodd used knight
+
+ZacTodd received largest army
+
+ZacTodd moved robberto tile: 9
+
+ZacTodd stole card from: RaivisSh
+
+You stole: wool from: RaivisSh
+
+ZacTodd rolled: dice_4 dice_3
+
+ZacTodd moved robberto tile: 18
+
+ZacTodd stole card from: RaivisSh
+
+You stole: lumber from: RaivisSh
+
+
+uudwhuq61821 rolled: dice_5 dice_1
+
+ZacTodd got:ore
+
+RaivisSh got:oreoreoreore
+
+Palmen got:oreoreore
+
+uudwhuq61821 wants to give: oreore for: grain
+
+
+Palmen rolled: dice_6 dice_1
+
+Palmen moved robberto tile: 15
+
+Palmen stole card from: RaivisSh
+
+Palmen wants to give: lumber lumber for: wool
+
+Palmen traded with: ZacTodd
+
+Palmen gave bank: oreoreore and took grain
+
+Palmen bought development card
+
+
+RaivisSh rolled: dice_3 dice_1
+
+ZacTodd got: wool wool wool
+
+RaivisSh got: wool wool wool wool
+
+RaivisSh bought development card
+
+
+ZacTodd used knight
+
+ZacTodd moved robberto tile: 9
+
+ZacTodd stole card from: RaivisSh
+
+You stole: wool from: RaivisSh
+
+ZacTodd rolled: dice_5 dice_6
+
+ZacTodd got: lumber lumber
+
+uudwhuq61821 got: lumber
+
+RaivisSh got: lumber lumber
+
+Palmen got: grain
+
+ZacTodd gave bank: wool wool wool wool and took grain
+
+ZacTodd bought development card
+
+ZacTodd gave bank: lumber lumber lumber lumber and took brick
+
+
+uudwhuq61821 rolled: dice_1 dice_5
+
+ZacTodd got:ore
+
+Palmen got:oreore
+
+
+Palmen used knight
+
+Palmen moved robberto tile: 17
+
+Palmen stole card from: ZacTodd
+
+Palmen stole: wool
+
+Palmen rolled: dice_3 dice_3
+
+ZacTodd got:ore
+
+RaivisSh got:oreoreoreore
+
+Palmen got:oreoreore
+
+Palmen bought development card
+
+
+RaivisSh used knight
+
+RaivisSh moved robberto tile: 1
+
+RaivisSh stole card from: ZacTodd
+
+RaivisSh stole: lumber
+
+RaivisSh rolled: dice_6 dice_2
+
+ZacTodd got: brick brick brick
+
+uudwhuq61821 got: brickoreore
+
+Palmen got:oreore
+
+RaivisSh wants to give: ore for: brick
+
+RaivisSh wants to give: oreore for: brick
+
+RaivisSh gave bank: oreoreoreore and took brick
+
+RaivisSh built a road
+
+
+ZacTodd used knight
+
+ZacTodd moved robberto tile: 9
+
+ZacTodd stole card from: RaivisSh
+
+You stole: wool from: RaivisSh
+
+ZacTodd rolled: dice_5 dice_2
+
+ZacTodd has: 9 card. Needs to discard: 4 card
+
+uudwhuq61821 has: 9 card. Needs to discard: 4 card
+
+uudwhuq61821 discarded:oreoreore brick
+
+ZacTodd discarded: lumber lumber brickore
+
+ZacTodd moved robberto tile: 15
+
+ZacTodd stole card from: RaivisSh
+
+You stole: lumber from: RaivisSh
+
+ZacTodd gave bank: brick brick and took grain
+
+ZacTodd bought development card
+
+ZacTodd built a road
+
+
+uudwhuq61821 rolled: dice_3 dice_6
+
+ZacTodd got: grain
+
+RaivisSh got: grain grain
+
+uudwhuq61821 built a road
+
+
+Palmen rolled: dice_6 dice_5
+
+ZacTodd got: lumber lumber
+
+uudwhuq61821 got: lumber
+
+RaivisSh got: lumber lumber
+
+Palmen got: grain
+
+Palmen gave bank: oreoreore and took grain
+
+Palmen built a city
+
+
+RaivisSh rolled: dice_3 dice_5
+
+ZacTodd got: brick brick brick
+
+uudwhuq61821 got: brickoreore
+
+Palmen got:oreore
+
+RaivisSh bought development card
+
+
+ZacTodd used knight
+
+ZacTodd moved robberto tile: 9
+
+ZacTodd stole card from: RaivisSh
+
+You stole: lumber from: RaivisSh
+
+ZacTodd rolled: dice_5 dice_2
+
+ZacTodd moved robberto tile: 14
+
+ZacTodd stole card from: RaivisSh
+
+You stole:ore from: RaivisSh
+
+ZacTodd gave bank: brick brick and took wool
+
+ZacTodd bought development card
+
+
+uudwhuq61821 rolled: dice_6 dice_3
+
+ZacTodd got: grain
+
+RaivisSh got: grain grain grain grain
+
+uudwhuq61821 wants to give: ore for: grain
+
+uudwhuq61821 wants to give: ore lumber for: grain
+
+RaivisSh wants to give uudwhuq61821 : grain for: ore brick
+
+uudwhuq61821 wants to give: oreore for: grain
+
+uudwhuq61821 wants to give: oreore lumber for: grain
+
+uudwhuq61821 traded with: ZacTodd
+
+uudwhuq61821 built a settlement
+
+
+Palmen rolled: dice_3 dice_3
+
+ZacTodd got:ore
+
+RaivisSh got:oreoreoreore
+
+Palmen got:oreoreoreore
+
+Palmen used year of plenty
+
+Palmen took from bank: grain grain
+
+Palmen built a city
+
+
+RaivisSh rolled: dice_4 dice_6
+
+uudwhuq61821 got: lumber lumber lumber
+
+Palmen got: lumber lumber
+
+RaivisSh wants to give: ore for: brick
+
+RaivisSh wants to give: grain for: brick
+
+RaivisSh gave bank: oreoreoreore and took brick
+
+RaivisSh built a road
+
+RaivisSh gave bank: grain grain grain grain and took brick
+
+
+ZacTodd used knight
+
+ZacTodd moved robberto tile: 9
+
+ZacTodd stole card from: RaivisSh
+
+You stole: brick from: RaivisSh
+
+ZacTodd rolled: dice_2 dice_3
+
+ZacTodd got: lumber
+
+uudwhuq61821 got: wool wool wool
+
+Palmen got: lumber lumber
+
+ZacTodd gave bank: brick brick lumber lumber lumber lumber and took grain grain
+
+ZacTodd built a city
+
+
+trophy ZacTodd won the game! trophy
+
+
+RaivisSh has left the game chat
+
+uudwhuq61821 has left the game chat
+
+Thank you for playing. Game is closed, cannot create a rematch anymore
