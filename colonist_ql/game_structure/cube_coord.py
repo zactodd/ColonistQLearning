@@ -360,10 +360,21 @@ def cube_to_pixel(c, size):
 
 
 def all_edges(coords):
+    """
+    Finds all the triples from the given cube coords.
+    :param coords: A set of cube coords.
+    :return: A set of triples.
+    """
     return {frozenset({a, b}) for a in coords for b in coords - {a} if is_neighbour(a, b)}
 
 
-def all_edges_from_centre(k, exclude_outer_ring=True):
+def edges_from_centre(k, exclude_outer_ring=True):
+    """
+    Gets all the edges k positions from the centre
+    :param k: The distance from the center.
+    :param exclude_outer_ring: If to exclude the edge between the hexes on the outer ring from the centre.
+    :return: A set of all the edges from the centre.
+    """
     edges = all_edges(neighbours_from_centre(k))
     if exclude_outer_ring:
         edges -= edges_on_ring(ring_from_centre(k))
