@@ -1,3 +1,6 @@
+import functools
+import operator
+
 RESOURCES_TYPES = {"wood", "sheep", "grain", "brick", "ore"}
 PURCHASES = {
     "road": {"wood": 1, "brick": 1},
@@ -53,3 +56,7 @@ PORT_PLACEMENT = {
     (3, -3, 0): (2, -2, 0),
     (1, -3, 2): (1, -2, 1)
 }
+
+DICE_PIPS = {2: 1, 3: 2, 4: 3, 5: 4, 6: 5, 7: 6, 8: 5, 9: 4, 10: 3, 11: 2, 12: 1}
+PREPARED_DICE_DIST = functools.reduce(operator.iconcat, [[k] * v for k, v in DICE_PIPS.items()], [])
+
