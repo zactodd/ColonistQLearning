@@ -5,19 +5,22 @@ import colonist_ql.facts as facts
 
 
 class Road:
-    def __init__(self, edge):
+    def __init__(self, edge, dummy=False):
         self.edge = edge
         self.planner_coords = cc.edge_planer_position(edge)
-        Roads().add()
+
+        if not dummy:
+            Roads().add()
 
 
 class Settlement:
-    def __init__(self, triple, is_city=False):
+    def __init__(self, triple, is_city=False, dummy=False):
         self.triple = triple
         self.is_city = is_city
         self.port = self._port(triple)
 
-        Settlements().add(self)
+        if not dummy:
+            Settlements().add(self)
 
     @staticmethod
     def _port(triple):
@@ -32,14 +35,15 @@ class Settlement:
 
 
 class Port:
-    def __init__(self, sea_coord, land_cord, text):
+    def __init__(self, sea_coord, land_cord, text, dummy=False):
         self.sea_coord = sea_coord
         self.land_coord = land_cord
         self.edge = (sea_coord, land_cord)
         self.triples = tuple(frozenset({sea_coord, land_cord, t}) for t in cc.triples_from_neighbours(*self.edge))
         self.transfer_rates = self._transfer_rates(text)
 
-        Ports().add(self)
+        if not dummy:
+            Ports().add(self)
 
     @staticmethod
     def _transfer_rates(text):
