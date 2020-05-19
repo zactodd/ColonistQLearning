@@ -121,28 +121,39 @@ class Roads(Structures):
         self.structures_dict[road.edge] = road
 
 
-def potential_road_edges(owned_roads):
+def potential_road_edges(owned_roads, placed_roads=None):
     """
     Gets all the possible placement options for additional roads.
-    :param owned_roads: The roads you own.
+    :param owned_roads: The roads that are owned by the player.
+    :param placed_roads: roads that have ready been place, by default gets roads in the Roads singleton
     :return: A set of placement edges.
     """
+    if placed_roads is None:
+        placed_roads = Roads().get_all()
+    edges = {r.edge for r in placed_roads}
+    return {potential for r in owned_roads for potential in cc.edge_neighbours(r.edges) if potential not in edges}
+
+
+def potential_settlement_triples(owned_roads, placed_settlements=None):
+    """
+    Gets all the possible placement options for additional settlements.
+    :param owned_roads: The roads that are owned by the player.
+    :param placed_settlements: The houses settlements in the game.
+    :return: A set of placement triples.
+    """
+    if placed_settlements is None:
+        placed_settlements = Settlements().get_all()
+    restricted = {t for h in placed_settlements for t in cc.triple_neighbours(h.triple)}
     return {
-        potential for r in owned_roads for potential in cc.edge_neighbours(r.edges)
-        if potential not in Roads().has(potential)
+        potential for r in owned_roads for potential in cc.triples_from_neighbours(*r.edge)
+        if potential not in restricted
     }
 
 
-def house_options(owned_roads, placed_house):
+def potential_settlement_upgrades(owned_settlements):
     """
-    Gets all the possible placement options for additional houses.
-    :param owned_roads: The roads you own.
-    :param placed_house: The houses placed in the game.
-    :return: A set of placement vertices.
+    Gets all the possible options for upgrading settlements.
+    :param owned_settlements: The settlements that are owned by the player.
+    :return: A set of settlement that can be upgraded.
     """
-    restricted = set()
-    for h in placed_house:
-        restricted.add(cc.triple_neighbours(h))
-    return {
-        potential for r in owned_roads for potential in cc.triples_from_neighbours(*r) if potential not in restricted
-    }
+    return {s for s in owned_settlements if not s.is_city}
