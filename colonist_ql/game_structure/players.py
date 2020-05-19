@@ -1,5 +1,5 @@
-import colonist_ql.game_structure.utils as utils
 import colonist_ql.facts as facts
+import colonist_ql.game_structure.structures as structures
 from collections import Counter
 
 
@@ -12,6 +12,7 @@ class Player:
 
         self.settlements = settlements if settlements is not None else []
         self.roads = roads if roads is not None else []
+        self.road_length = self._update_road_length()
 
         self.hand = hand if hand is not None else Counter()
 
@@ -42,14 +43,17 @@ class Player:
         return rates
 
     def _update_vp(self):
-        self.does_now_has_largest_army()
-        self.does_now_has_longest_road()
+        self._update_has_largest_army()
+        self._update_longest_road()
         self.vp = self.calculate_vp()
 
     def _update_rates(self, rates):
         for r, i in rates.items():
             if self.bank_rates[i] > r:
                 self.bank_rates = r
+
+    def _update_road_length(self):
+        self.road_length = structures.longest_road(self.roads)
 
     def settlement_vp(self):
         return sum(1 + s.is_city for s in self.settlements)
@@ -63,21 +67,20 @@ class Player:
         threshold_vp = 2 * (self.has_largest_army + self.has_longest_road)
         return self.settlement_vp() + cards_vp + threshold_vp
 
-    def does_now_has_longest_road(self):
-        # TODO implement
-        return self.has_longest_road
+    def _update_longest_road(self):
+        if not self.has_largest_army:
+            self.has_longest_road = len(self.roads) >= 3 and \
+                                    all(o.road_length < self.road_length for o in self.opponents)
 
-    def does_now_has_largest_army(self):
-        if self.has_largest_army:
-            return True
-        elif self.knights >= 3:
-            return all(self.knights > o.knights for o in self.opponents)
-        else:
-            return False
+    def _update_has_largest_army(self):
+        if not self.has_largest_army:
+            self.has_largest_army = self.knights >= 3 and all(o.knights < self.knights for o in self.opponents)
+            for o in  self.opponents:
+                o.has_largest_army = False
 
     def add_knight(self):
         self.knights += 1
-        self.has_largest_army = self.does_now_has_largest_army()
+        self._update_has_largest_army()
 
     def purchase_options(self):
         options = []
@@ -100,6 +103,15 @@ class Player:
                 settlement.upgrade()
         self._update_vp()
 
+    def add_road(self, road):
+        """
+        Adds road to the player.
+        :param road: THe road to be added.
+        """
+        self.roads.append(road)
+        self._update_road_length()
+        self._update_road_length()
+
     def draw_cards(self, cards):
         for c in cards:
             self.hand[c] += 1
@@ -117,11 +129,3 @@ class Player:
         """
         for r in resource:
             self.hand[r] += 1
-
-
-
-
-
-
-
-
