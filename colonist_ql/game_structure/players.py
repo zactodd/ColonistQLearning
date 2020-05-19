@@ -1,5 +1,6 @@
 import colonist_ql.facts as facts
 import colonist_ql.game_structure.structures as structures
+from colonist_ql.game_structure.board import Board
 from collections import Counter
 
 
@@ -11,6 +12,8 @@ class Player:
         self.opponents = opponents
 
         self.settlements = settlements if settlements is not None else []
+        self.num_cities, self.num_settlements = self._update_settlement_count()
+
         self.roads = roads if roads is not None else []
         self.road_length = self._calculate_road_length()
 
@@ -42,6 +45,12 @@ class Player:
                     rates[i] = r
         return rates
 
+    def _update_settlement_count(self):
+        num_cities, num_settlement = 0, 0
+        for s in self.settlements:
+            num_cities if s.is_city else num_settlement += 1
+        return num_cities, num_settlement
+
     def _update_vp(self):
         self._update_has_largest_army()
         self._update_longest_road()
@@ -57,6 +66,9 @@ class Player:
             return 0
         else:
             return structures.longest_road(self.roads)
+
+    def _can_purchase(self, price):
+        return all(self.hand[r] > c for r, c in price.items())
 
     def settlement_vp(self):
         return sum(1 + s.is_city for s in self.settlements)
@@ -99,12 +111,14 @@ class Player:
     def add_settlement(self, settlement):
         self.settlements.append(settlement)
         self._update_vp()
+        self._update_settlement_count()
 
     def upgrade_settlement(self, settlement):
         for s in self.settlements:
             if s == settlement:
                 settlement.upgrade()
         self._update_vp()
+        self._update_settlement_count()
 
     def add_road(self, road):
         """
@@ -114,6 +128,54 @@ class Player:
         self.roads.append(road)
         self._calculate_road_length()
         self._calculate_road_length()
+
+    def potential_settlements_locations(self):
+        """
+        Determines potential settlement locations.
+        :return: A set of triples representing the settlement locations.
+        """
+        return structures.potential_settlement_triples(self.roads)
+
+    def potential_road_locations(self):
+        """
+        Determines potential edge locations.
+        :return: A set of edges representing the road locations.
+        """
+        return structures.potential_road_edges(self.roads)
+
+    def potential_city_locations(self):
+        """
+        Determines potential city locations.
+        :return: A set of triples representing the city locations.
+        """
+        return structures.potential_settlement_upgrades(self.settlements)
+
+    def can_place_settlement(self):
+        """
+        Determines if a settlement can be placed.
+        :return: True if a settlement can be place otherwise False.
+        """
+        return self.num_settlements < Board().settlement_limit and \
+               self._can_purchase(facts.PURCHASES["settlement"]) and \
+               len(self.potential_settlements_locations()) > 0
+
+    def can_place_city(self):
+        """
+        Determines if a city can be placed.
+        :return: True if a city can be place otherwise False.
+        """
+        return self.num_cities < Board().settlement_limit and \
+               self._can_purchase(facts.PURCHASES["city"]) and \
+               len(self.potential_city_locations()) > 0
+
+    def can_place_road(self):
+        """
+        Determines if a road can be placed.
+        :return: True if a road can be place otherwise False.
+        """
+        return len(self.roads) < Board().road_limit and \
+               self._can_purchase(facts.PURCHASES["road"]) and \
+               len(self.potential_road_locations()) > 0
 
     def draw_cards(self, cards):
         for c in cards:

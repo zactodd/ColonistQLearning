@@ -5,8 +5,7 @@ from itertools import product
 import numpy as np
 import colonist_ql.game_structure.cube_coord as cc
 import colonist_ql.game_structure.visualise as visualise
-from colonist_ql.game_structure.hexes import Hex
-from colonist_ql.game_structure.structures import Port, Road, Settlement
+from colonist_ql.game_structure.structures import Port, Road, Settlement, Hex
 import colonist_ql.facts as facts
 from skimage import measure
 import os
