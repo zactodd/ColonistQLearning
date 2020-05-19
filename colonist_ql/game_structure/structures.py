@@ -11,14 +11,14 @@ class Road:
         self.planner_coords = cc.edge_planer_position(edge)
 
         if not dummy:
-            Roads().add()
+            Roads().add(self)
 
 
 class Settlement:
-    def __init__(self, triple, is_city=False, dummy=False):
+    def __init__(self, triple, is_city=False, port=None, dummy=False):
         self.triple = triple
         self.is_city = is_city
-        self.port = self._port(triple)
+        self.port = self._port(triple) if port is None else port
 
         if not dummy:
             Settlements().add(self)
@@ -157,3 +157,29 @@ def potential_settlement_upgrades(owned_settlements):
     :return: A set of settlement that can be upgraded.
     """
     return {s for s in owned_settlements if not s.is_city}
+
+
+def longest_road(owned_roads):
+    road_dict = {r.edge: r for r in owned_roads}
+    graph = {e: [n for n in cc.edge_neighbours(e) if n in road_dict] for e, r in road_dict.items()}
+    return len(max(_dfs(graph)))
+
+
+def _dfs(graph, v=None, seen=None, path=None):
+    if seen is None:
+        seen = []
+    if path is None:
+        path = [v]
+    seen.append(v)
+
+    paths = []
+    if v is None:
+        for i in graph:
+            paths.extend(_dfs(graph, i, seen[:], [i]))
+    else:
+        for t in graph[v]:
+            if t not in seen:
+                t_path = path + [t]
+                paths.append(tuple(t_path))
+                paths.extend(_dfs(graph, t, seen[:], t_path))
+    return paths
