@@ -12,7 +12,7 @@ class Player:
 
         self.settlements = settlements if settlements is not None else []
         self.roads = roads if roads is not None else []
-        self.road_length = self._update_road_length()
+        self.road_length = self._calculate_road_length()
 
         self.hand = hand if hand is not None else Counter()
 
@@ -52,8 +52,11 @@ class Player:
             if self.bank_rates[i] > r:
                 self.bank_rates = r
 
-    def _update_road_length(self):
-        self.road_length = structures.longest_road(self.roads)
+    def _calculate_road_length(self):
+        if len(self.roads) == 0:
+            return 0
+        else:
+            return structures.longest_road(self.roads)
 
     def settlement_vp(self):
         return sum(1 + s.is_city for s in self.settlements)
@@ -75,7 +78,7 @@ class Player:
     def _update_has_largest_army(self):
         if not self.has_largest_army:
             self.has_largest_army = self.knights >= 3 and all(o.knights < self.knights for o in self.opponents)
-            for o in  self.opponents:
+            for o in self.opponents:
                 o.has_largest_army = False
 
     def add_knight(self):
@@ -109,8 +112,8 @@ class Player:
         :param road: THe road to be added.
         """
         self.roads.append(road)
-        self._update_road_length()
-        self._update_road_length()
+        self._calculate_road_length()
+        self._calculate_road_length()
 
     def draw_cards(self, cards):
         for c in cards:
@@ -129,3 +132,20 @@ class Player:
         """
         for r in resource:
             self.hand[r] += 1
+
+    def __dict__(self):
+        return {
+            "name": self.name,
+            "colour": self.colour,
+            "vp": self.vp
+        }
+
+    def __str__(self):
+        resources_string = "\n".join(f"\t{r:<8}: {c:02}" for r, c in self.hand.items())
+        return f"{self.colour} Player {self.name}:\n" \
+               f"Score: {self.vp}\n" \
+               f"\tSettlements VP: {self.settlement_vp()}\n" \
+               f"\tHas Longest Road: {self.has_largest_army}\n" \
+               f"\tHas Largest Army: {self.has_largest_army}\n" \
+               f"\tKnights: {self.knights}\n" \
+               f"Resources:\n {resources_string}"
