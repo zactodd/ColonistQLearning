@@ -24,6 +24,10 @@ class Road:
         if not dummy:
             Roads().add(self)
 
+    def __str__(self):
+        t1, t2 = cc.triples_from_neighbours(*self.edge)
+        return f"Road between {string_triple(t1)} and {string_triple(t2)}."
+
 
 class Settlement:
     def __init__(self, triple, is_city=False, port=None, dummy=False):
@@ -45,6 +49,10 @@ class Settlement:
     def has_port(self):
         return self.port is not None
 
+    def __str__(self):
+        type_str = "City" if self.is_city else "Settlement"
+        return f"{type_str} on {string_triple(self.triple)}"
+
 
 class Port:
     def __init__(self, sea_coord, land_cord, text, dummy=False):
@@ -53,6 +61,7 @@ class Port:
         self.edge = (sea_coord, land_cord)
         self.triples = tuple(frozenset({sea_coord, land_cord, t}) for t in cc.triples_from_neighbours(*self.edge))
         self.transfer_rates = self._transfer_rates(text)
+        self.text = text
 
         if not dummy:
             Ports().add(self)
@@ -69,6 +78,11 @@ class Port:
 
     def get_rates(self):
         return self.transfer_rates
+
+    def __str__(self):
+        port_text = " ".join(self.text.split("\n"))
+        t1, t2 = self.triples
+        return f"Port trading {port_text} on {string_triple(t1)} and {string_triple(t2)}."
 
 
 class Structures(metaclass=patterns.PolymorphicSingleton):
@@ -209,3 +223,38 @@ def _dfs(graph, vertex=None, seen=None, path=None):
                 paths.append(tuple(t_path))
                 paths.extend(_dfs(graph, t, seen[:], t_path))
     return paths
+
+
+def string_hex(h):
+    """
+    Coverts a hex to a single letter repressing it general purpose.
+    :param h: The hex to represented.
+    :return: A string of len 1.
+    """
+    value = h.value
+    if value is None:
+        return "D" if h.resource == "desert" else "S"
+    elif isinstance(value, int):
+        return str(value)
+    else:
+        return "P"
+
+
+def string_triple(t, coord_format="readable"):
+    """
+    Converts a triple to a string.
+    :param t: The triple to be converted.
+    :param coord_format: The format in which the triple will be displayed.
+    :return: A string representing the triple.
+    """
+    assert coord_format in ["readable", "cube", "axial"], \
+        f"The coord_format {coord_format} is not valid, uses either readable, cube or axial."
+    if coord_format == "readable":
+        if any(not Hexes().has(c) for c in t):
+            return string_triple(t)
+        else:
+            return " ".join(string_hex(Hexes().get(c)) for c in cc.planer_order(t))
+    elif coord_format == "axial":
+        return " ".join(cc.cube_to_axial(c) for c in cc.planer_order(t))
+    else:
+        return " ".join(cc.planer_order(t))
