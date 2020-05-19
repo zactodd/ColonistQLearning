@@ -93,6 +93,18 @@ class Structures(metaclass=patterns.PolymorphicSingleton):
         return self.structures_dict.values()
 
 
+class Hexes(Structures):
+    def __init__(self):
+        super().__init__()
+
+    def add(self, h):
+        """
+        Adds a hex to the hexes.
+        :param h: The hex to be added.
+        """
+        self.structures_dict[h.cube_coords] = h
+
+
 class Ports(Structures):
     def __init__(self):
         super().__init__()
@@ -102,10 +114,9 @@ class Ports(Structures):
         Adds a port to the ports.
         :param port: The port to be added.
         """
-        if not self.has(port):
-            t1, t2 = port.triples
-            self.structures_dict[t1] = port
-            self.structures_dict[t2] = port
+        t1, t2 = port.triples
+        self.structures_dict[t1] = port
+        self.structures_dict[t2] = port
 
 
 class Settlements(Structures):
