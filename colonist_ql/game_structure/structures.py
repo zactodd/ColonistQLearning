@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 from colonist_ql.game_structure import cube_coord as cc
 import colonist_ql.patterns as patterns
 import colonist_ql.facts as facts
+from collections import defaultdict
 
 
 class Road:
@@ -120,14 +121,16 @@ class Roads(Structures):
         self.structures_dict[road.edge] = road
 
 
-def road_options(owned_roads, placed_roads):
+def potential_road_edges(owned_roads):
     """
     Gets all the possible placement options for additional roads.
     :param owned_roads: The roads you own.
-    :param placed_roads: The roads placed in the game.
     :return: A set of placement edges.
     """
-    return {potential for r in owned_roads for potential in cc.edge_neighbours(r) if potential not in placed_roads}
+    return {
+        potential for r in owned_roads for potential in cc.edge_neighbours(r.edges)
+        if potential not in Roads().has(potential)
+    }
 
 
 def house_options(owned_roads, placed_house):
