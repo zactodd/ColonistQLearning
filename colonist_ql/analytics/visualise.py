@@ -76,3 +76,13 @@ def plot_maximum_expected_resources():
     """
     settlements = [Settlement(t, dummy=True) for t in cc.triples_from_centre(3)]
     plot_expected_resources_from_settlements(settlements, False)
+
+
+def plot_player_bank_rates(player):
+    """
+    Plot the bank rate of the player.
+    :param player:
+    """
+    resources, rate = player.bank_rates.items()
+    plt.bar(resources, rate)
+    plt.show()
