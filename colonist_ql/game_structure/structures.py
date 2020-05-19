@@ -251,7 +251,7 @@ def string_triple(t, coord_format="readable"):
         f"The coord_format {coord_format} is not valid, uses either readable, cube or axial."
     if coord_format == "readable":
         if any(not Hexes().has(c) for c in t):
-            return string_triple(t)
+            return string_triple(t, "cube")
         else:
             return " ".join(string_hex(Hexes().get(c)) for c in cc.planer_order(t))
     elif coord_format == "axial":
