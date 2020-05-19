@@ -160,24 +160,28 @@ def potential_settlement_upgrades(owned_settlements):
 
 
 def longest_road(owned_roads):
+    """
+    Calculates the length of the longest road.
+    :param owned_roads: The roads that are owned by the player.
+    :return: An int representing the length of the road.
+    """
     road_dict = {r.edge: r for r in owned_roads}
     graph = {e: [n for n in cc.edge_neighbours(e) if n in road_dict] for e, r in road_dict.items()}
     return len(max(_dfs(graph)))
 
 
-def _dfs(graph, v=None, seen=None, path=None):
+def _dfs(graph, vertex=None, seen=None, path=None):
     if seen is None:
         seen = []
-    if path is None:
-        path = [v]
-    seen.append(v)
-
     paths = []
-    if v is None:
+    if vertex is None:
         for i in graph:
             paths.extend(_dfs(graph, i, seen[:], [i]))
     else:
-        for t in graph[v]:
+        if path is None:
+            path = [vertex]
+        seen.append(vertex)
+        for t in graph[vertex]:
             if t not in seen:
                 t_path = path + [t]
                 paths.append(tuple(t_path))

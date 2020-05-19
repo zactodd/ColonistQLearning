@@ -45,7 +45,7 @@ def neighbours(c, k=1):
         }
 
 
-def neighbours_from_centre(k):
+def neighbours_from_centre(k=1):
     """
     Gets all neighbours from the cube point (0, 0, 0).
     :param k: The distance max distance of neighbours.
@@ -84,7 +84,7 @@ def ring(c, k):
     :param k: The distance at which the ring is from its centre.
     :return: A list of coords representing the ring.
     """
-    assert k > 0, "THe ring can only be a positive distance away from its centre."
+    assert k > 0, "The ring can only be a positive distance away from its centre."
     n = add(c, scale((-1, 0, 1), k))
     coords = []
     for d in [(1, -1, 0), (1, 0, -1), (0, 1, -1), (-1, 1, 0), (-1, 0, 1), (0, -1, 1)]:
@@ -189,7 +189,7 @@ def edge_neighbours(edge):
     assert is_neighbour(*edge), f"{edge} is not an edge. Both cube coords in the edge need to be neighbours."
     a, b = edge
     t1, t2 = triples_from_neighbours(a, b)
-    return {a, t1}, {a, t2}, {b, t1}, {b, t2}
+    return frozenset({a, t1}), frozenset({a, t2}), frozenset({b, t1}), frozenset({b, t2})
 
 
 def triple_neighbours(triple):
