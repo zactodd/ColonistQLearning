@@ -199,7 +199,7 @@ def triple_neighbours(triple):
     :return: A set of triples.
     """
     assert is_triple(*triple), f"{triple} is not a triple."
-    return {frozenset({*n, t}) for n in combinations(triple, r=2) for t in triples_from_neighbours(*n)} - {triple}
+    return {frozenset({*n, c}) for n in combinations(triple, r=2) for c in triples_from_neighbours(*n)} - {triple}
 
 
 def clockwise_centre_angle(c):

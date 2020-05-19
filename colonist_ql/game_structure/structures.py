@@ -166,8 +166,8 @@ def potential_road_edges(owned_roads, placed_roads=None):
     """
     if placed_roads is None:
         placed_roads = Roads().get_all()
-    edges = {r.edge for r in placed_roads}
-    return {potential for r in owned_roads for potential in cc.edge_neighbours(r.edges) if potential not in edges}
+    restricted_edges = {r.edge for r in placed_roads}
+    return {potential for r in owned_roads for potential in cc.edge_neighbours(r.edges)} - restricted_edges
 
 
 def potential_settlement_triples(owned_roads, placed_settlements=None):
@@ -179,11 +179,8 @@ def potential_settlement_triples(owned_roads, placed_settlements=None):
     """
     if placed_settlements is None:
         placed_settlements = Settlements().get_all()
-    restricted = {t for h in placed_settlements for t in cc.triple_neighbours(h.triple)}
-    return {
-        potential for r in owned_roads for potential in cc.triples_from_neighbours(*r.edge)
-        if potential not in restricted
-    }
+    restricted = _restricted_settlement_placements(placed_settlements)
+    return {potential for r in owned_roads for potential in cc.triples_from_neighbours(*r.edge)} - restricted
 
 
 def potential_settlement_upgrades(owned_settlements):
@@ -193,6 +190,21 @@ def potential_settlement_upgrades(owned_settlements):
     :return: A set of settlement that can be upgraded.
     """
     return {s for s in owned_settlements if not s.is_city}
+
+
+def _restricted_settlement_placements(placed_settlements):
+    return {t for s in placed_settlements for t in {s.triple} | cc.triple_neighbours(s.triple)}
+
+
+def placement_phase_settlement_triples(placed_settlements=None):
+    """
+    Gets all the possible placement options for settlements in the placement phase.
+    :param placed_settlements: The houses settlements in the game.
+    :return: A set of placement triples.
+    """
+    if placed_settlements is None:
+        placed_settlements = Settlements().get_all()
+    return cc.triples_from_centre(2) - _restricted_settlement_placements(placed_settlements)
 
 
 def longest_road(owned_roads):
