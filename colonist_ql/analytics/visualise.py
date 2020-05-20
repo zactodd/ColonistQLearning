@@ -40,7 +40,7 @@ def plot_resource_from_settlements(settlements, rolls, include_blocked=False, de
     for s in settlements:
         for c in s.triple:
             if not include_blocked or not c.is_blocked:
-                h = Board().get_hex(c)
+                h = Hexes().get(c)
                 rolls_dict[h.value][h.resource] += 1 + s.is_city
     recourse_obtained = Counter()
     for roll in rolls:

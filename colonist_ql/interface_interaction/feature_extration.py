@@ -320,14 +320,16 @@ def extract_roads(image, road_positions):
     pass
 
 
-def extract_settlements(image, open_settlement_positions):
+def extract_settlements(image, open_settlement_positions, padding=30):
     """
     Extracts the positions of the settlements given a set of possible positions.
     :param image: The game image.
     :param open_settlement_positions: A set of bounding boxes representing possible settlement locations.
     :return: The position of the roads if they are in the :param open_settlement_positions.
     """
-    pass
+    for x, y in open_settlement_positions:
+        plt.imshow(image[y - padding:y + padding, x - padding, x + padding])
+        plt.show()
 
 
 def extract_cities(image, settlements_position):
