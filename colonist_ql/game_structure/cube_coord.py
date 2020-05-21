@@ -192,14 +192,14 @@ def edge_neighbours(edge):
     return frozenset({a, t1}), frozenset({a, t2}), frozenset({b, t1}), frozenset({b, t2})
 
 
-def triple_neighbours(triple):
+def triple_neighbours(t):
     """
     Gets all the neighbouring triples.
-    :param triple: Cube coord triple.
+    :param t: Cube coord triple.
     :return: A set of triples.
     """
-    assert is_triple(*triple), f"{triple} is not a triple."
-    return {frozenset({*n, c}) for n in combinations(triple, r=2) for c in triples_from_neighbours(*n)} - {triple}
+    assert is_triple(*t), f"{t} is not a triple."
+    return {frozenset({*n, c}) for n in combinations(t, r=2) for c in triples_from_neighbours(*n)} - {t}
 
 
 def clockwise_centre_angle(c):
@@ -228,13 +228,13 @@ def planer_position(c, radius=None):
         return np.sqrt(3) / 2 * radius * (x - y), -3 / 2 * radius * z
 
 
-def triple_planner_position(triple):
+def triple_planner_position(t):
     """
     Calculates the planer position of the triple.
-    :param triple: Cube coord triple.
+    :param t: Cube coord triple.
     :return: horizontal, vertical positions.
     """
-    return planer_position(sum(i) / 3 for i in zip(*triple))
+    return planer_position(sum(i) / 3 for i in zip(*t))
 
 
 def edge_planer_position(edge):
