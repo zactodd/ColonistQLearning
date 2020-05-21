@@ -8,7 +8,7 @@ import numpy as np
 
 class Hex:
     def __init__(self, cube_coords, real_coords, resource, value, blocked=False):
-        self.cube_coords = cc.cube_round(cube_coords)
+        self.cube_coords = cube_coords
         self.real_coords = real_coords
         self.resource = resource
         self.value = value
