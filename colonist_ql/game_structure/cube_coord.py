@@ -283,7 +283,7 @@ def cube_round(c):
         ry = -rx - rz
     else:
         rz = -rx - ry
-    return rx, rz, ry
+    return int(rx), int(rz), int(ry)
 
 
 def cube_to_axial(c):

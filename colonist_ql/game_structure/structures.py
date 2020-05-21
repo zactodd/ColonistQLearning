@@ -2,12 +2,13 @@ from abc import ABC, abstractmethod
 from colonist_ql.game_structure import cube_coord as cc
 import colonist_ql.patterns as patterns
 import colonist_ql.facts as facts
-from collections import defaultdict
+import colonist_ql.utils as utils
+import numpy as np
 
 
 class Hex:
     def __init__(self, cube_coords, real_coords, resource, value, blocked=False):
-        self.cube_coords = cube_coords
+        self.cube_coords = cc.cube_round(cube_coords)
         self.real_coords = real_coords
         self.resource = resource
         self.value = value
@@ -30,18 +31,25 @@ class Road:
 
 
 class Settlement:
-    def __init__(self, triple, is_city=False, port=None, dummy=False):
-        self.triple = triple
+    def __init__(self, t, is_city=False, port=None, dummy=False):
+        """
+        Init for Settlement.
+        :param t: triple.
+        :param is_city: If the settlement is a city
+        :param port: The port that the settlement has, else None.
+        :param dummy: If the settlement is being added to settlement.
+        """
+        self.triple = t
         self.is_city = is_city
-        self.port = self._port(triple) if port is None else port
+        self.port = self._port(t) if port is None else port
 
         if not dummy:
             Settlements().add(self)
 
     @staticmethod
-    def _port(triple):
+    def _port(t):
         p = Ports()
-        return p.get(triple) if p.has(triple) else None
+        return p.get(t) if p.has(t) else None
 
     def upgrade(self):
         self.is_city = True
@@ -105,6 +113,10 @@ class Structures(metaclass=patterns.PolymorphicSingleton):
 
     def get_all(self):
         return self.structures_dict.values()
+
+    def add_all(self, items):
+        for i in items:
+            self.add(i)
 
 
 class Hexes(Structures):
@@ -204,7 +216,26 @@ def placement_phase_settlement_triples(placed_settlements=None):
     """
     if placed_settlements is None:
         placed_settlements = Settlements().get_all()
-    return cc.triples_from_centre(2) - _restricted_settlement_placements(placed_settlements)
+    return cc.triples_from_centre(3) - _restricted_settlement_placements(placed_settlements)
+
+
+def real_triple_locations(triples):
+    """
+    Determines the real location of triples.
+    :param triples: The triples to determine the real location of.
+    :return: A list of real coords for the triples
+    """
+    return [real_triple_location(t) for t in triples]
+
+
+def real_triple_location(t):
+    """
+    Determines the real location of a triple.
+    :param t: The triple to be located.
+    :return: The real coord of the triple location
+    """
+    x, y = zip(*[Hexes().get(c).real_coords for c in t])
+    return np.mean(x), np.mean(y)
 
 
 def longest_road(owned_roads):
