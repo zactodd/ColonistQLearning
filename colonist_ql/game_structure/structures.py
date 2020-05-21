@@ -219,7 +219,7 @@ def placement_phase_settlement_triples(placed_settlements=None):
     return cc.triples_from_centre(3) - _restricted_settlement_placements(placed_settlements)
 
 
-def real_triple_locations(triples):
+def real_triples_locations(triples):
     """
     Determines the real location of triples.
     :param triples: The triples to determine the real location of.
@@ -236,6 +236,27 @@ def real_triple_location(t):
     """
     x, y = zip(*[Hexes().get(c).real_coords for c in t])
     return np.mean(x), np.mean(y)
+
+
+def real_edges_locations(edges):
+    """
+    Determines the real location of edges.
+    :param edges: The edges to determine the real location of.
+    :return: A list of real coords for the edges
+    """
+    return [real_edge_location(e) for e in edges]
+
+
+def real_edge_location(edge):
+    """
+    Determines the real location of a edge.
+    :param edge: The edge to be located.
+    :return: The real coord of the edge location
+    """
+    t0, t1 = cc.edge_triples(edge)
+    x0, y0 = real_triple_location(t0)
+    x1, y1 = real_triple_location(t1)
+    return tuple(sorted([x0, x1])), tuple(sorted([y0, y1]))
 
 
 def longest_road(owned_roads):

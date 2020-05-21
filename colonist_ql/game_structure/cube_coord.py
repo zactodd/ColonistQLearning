@@ -183,13 +183,23 @@ def triples(c):
 def edge_neighbours(edge):
     """
     Gets the edge neighbours of an edge.
-    :param edge: Two cube cords neighbours.
+    :param edge: Two cube coords neighbours.
     :return: The four edge neighbours.
     """
     assert is_neighbour(*edge), f"{edge} is not an edge. Both cube coords in the edge need to be neighbours."
     a, b = edge
     t1, t2 = triples_from_neighbours(a, b)
     return frozenset({a, t1}), frozenset({a, t2}), frozenset({b, t1}), frozenset({b, t2})
+
+
+def edge_triples(edge):
+    """
+    Get the triples that the edge is between.
+    :param edge: Two cube coords neighbours.
+    :return: Two triples.
+    """
+    t1, t2 = triples_from_neighbours(*edge)
+    return frozenset({t1, *edge}), frozenset({t2, *edge})
 
 
 def triple_neighbours(t):
@@ -243,8 +253,8 @@ def edge_planer_position(edge):
     :param edge: Two cube cords neighbours.
     :return: (horizontal, vertical) and (horizontal, vertical) positions.
     """
-    t1, t2 = triples_from_neighbours(*edge)
-    return triple_planner_position({t1, *edge}), triple_planner_position({t2, *edge})
+    t1, t2 = edge_triples(edge)
+    return triple_planner_position(t1), triple_planner_position(t2)
 
 
 def planer_order(coords):
