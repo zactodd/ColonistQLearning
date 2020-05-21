@@ -2,10 +2,10 @@ import cv2
 import pytesseract
 import matplotlib.pyplot as plt
 from itertools import product
-import numpy as np
 import colonist_ql.game_structure.cube_coord as cc
 import colonist_ql.game_structure.visualise as visualise
-from colonist_ql.game_structure.structures import Port, Road, Settlement, Hex
+import colonist_ql.utils as utils
+from colonist_ql.game_structure.structures import *
 import colonist_ql.facts as facts
 from skimage import measure
 import os
@@ -66,7 +66,7 @@ def filter_contours_by_distance(contours, point, upper=500, lower=300):
     :param lower: The lower distance bound.
     :return: The filtered list of contours.
     """
-    return [c for c in contours if upper >= distance(contour_centre(c), point) >= lower]
+    return [c for c in contours if upper >= utils.distance(contour_centre(c), point) >= lower]
 
 
 def draw_contours(image, contours):
@@ -93,10 +93,6 @@ def draw_contours(image, contours):
     # Centre contour.
     plt.scatter(np.mean(xs), np.mean(ys), c="r")
     plt.show()
-
-
-def distance(a, b):
-    return np.sqrt((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2)
 
 
 def dilation_consensus_text_extraction(image, tesseract_config, synonyms={}, ignores=[]):
@@ -252,7 +248,7 @@ def extract_land_information(image):
 
     x, y = list(zip(*points))
     cx, cy = np.mean(x), np.mean(y)
-    size = max([distance((cx, cy), p) for p in points]) / 3
+    size = max([utils.distance((cx, cy), p) for p in points]) / 3
 
     hexes = set()
     for x, y in points:
@@ -286,7 +282,7 @@ def extracts_sea_information(image, board_centre):
 
     x, y = list(zip(*points))
     cx, cy = np.mean(x), np.mean(y)
-    size = max([distance((cx, cy), p) for p in points]) / 5
+    size = max([utils.distance((cx, cy), p) for p in points]) / 5
 
     hexes = set()
     for (x, y), p in zip(points, ports):
@@ -310,14 +306,20 @@ def initial_board_extraction(image):
     return inner | outer
 
 
-def extract_roads(image, road_positions):
+def extract_roads(image, road_positions, padding=7):
     """
     Extracts the positions of the roads given a set of possible positions.
     :param image: The game image.
-    :param road_positions: A set of bounding boxes representing possible new road loactions..
+    :param road_positions: A set of bounding boxes representing possible new road locations.
+    :param padding: THe padding to add to ede of the positions.
     :return: The position of the roads if they are in the :param road_positions.
     """
-    pass
+    for (x0, x1), (y0, y1) in road_positions:
+        x0, y0, x1, y1 = int(x0), int(y0), int(x1), int(y1)
+        bb = image[y0 - padding:y1 + padding, x0 - padding:x1 + padding, ...]
+        
+        # TODO set up image matching
+        # match = match_images(bb, )
 
 
 def extract_settlements(image, open_settlement_positions, padding=30):
@@ -325,11 +327,16 @@ def extract_settlements(image, open_settlement_positions, padding=30):
     Extracts the positions of the settlements given a set of possible positions.
     :param image: The game image.
     :param open_settlement_positions: A set of bounding boxes representing possible settlement locations.
+    :param padding: THe padding to add to ede of the positions.
     :return: The position of the roads if they are in the :param open_settlement_positions.
     """
+
     for x, y in open_settlement_positions:
-        plt.imshow(image[y - padding:y + padding, x - padding, x + padding])
-        plt.show()
+        x, y = int(x), int(y)
+        bb = image[y - padding:y + padding, x - padding:x + padding, ...]
+
+        # TODO set up image matching
+        match = match_images(bb, )
 
 
 def extract_cities(image, settlements_position):
@@ -342,6 +349,3 @@ def extract_cities(image, settlements_position):
     pass
 
 
-if __name__ == '__main__':
-    image = cv2.imread("../../logs/game_images/game_0/2020_05_02__17_03_58.png")
-    initial_board_extraction(image)
