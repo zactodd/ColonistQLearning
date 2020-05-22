@@ -36,7 +36,7 @@ class Player:
 
     @staticmethod
     def _init_bank_rate(ports):
-        rates = {r: 4 for r in facts.RESOURCES_TYPES}
+        rates = {r: 4 for r in facts.facts.RESOURCES}
         if len(ports) == 0:
             return rates
         for p in ports:
@@ -102,7 +102,7 @@ class Player:
         for r, c in self.hand.items():
             rate = self.bank_rates[r]
             if rate <= c:
-                options.extend([({r: rate}, {i: 1}) for i in facts.RESOURCES_TYPES - {r}])
+                options.extend([({r: rate}, {i: 1}) for i in facts.facts.RESOURCES - {r}])
         for i, req in facts.PURCHASES.items():
             if all(self.hand[r] > c for r, c in req.items()):
                 options.append((req, i))

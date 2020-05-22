@@ -19,7 +19,7 @@ RESOURCE_COLOUR_RANGES = {
     facts.RESOURCES.WOOL: (np.asarray((30, 183, 158)), np.asarray((0, 142, 100))),
     facts.RESOURCES.GRAIN: (np.asarray((60, 220, 255)), np.asarray((5, 150, 180))),
     facts.RESOURCES.ORE: (np.asarray((178, 182, 176)), np.asarray((131, 133, 129))),
-    "desert": (np.asarray((230, 230, 220)), np.asarray((115, 140, 180)))
+    facts.TILES.DESERT: (np.asarray((230, 230, 220)), np.asarray((115, 140, 180)))
 }
 
 SEA_COLOUR_RANGE = (np.asarray((170, 110, 20)), np.asarray((160, 90, 0)))
@@ -290,7 +290,7 @@ def extracts_sea_information(image, board_centre):
         c = cc.pixel_to_cube(ap, size)
         if p is not None:
             Port(c, facts.PORT_PLACEMENT[c], p)
-        hexes.add(Hex(c, (x, y), "sea", p))
+        hexes.add(Hex(c, (x, y), facts.TILES.SEA, p))
     return hexes
 
 

@@ -15,7 +15,7 @@ class RESOURCES(enum):
 # Title
 class TILES(RESOURCES):
     DESERT = "desert"
-    SEA = "SEA"
+    SEA = "sea"
 
 
 PURCHASES = {
@@ -27,8 +27,8 @@ PURCHASES = {
 
 
 RESOURCE_COLOURS = {
-    "sea": "steelblue",
-    "desert": "navajowhite",
+    TILES.SEA: "steelblue",
+    TILES.DESERT: "navajowhite",
     RESOURCES.LUMBER: "forestgreen",
     RESOURCES.WOOL: "lightgreen",
     RESOURCES.GRAIN: "gold",
