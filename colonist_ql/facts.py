@@ -3,15 +3,21 @@ import operator
 import enum
 
 
-# Game resources
+# Game resources types
 class RESOURCES(enum):
     LUMBER = "lumber"
     BRICK = "brick"
     WOOL = "wool"
     GRAIN = "grain"
     ORE = "ore"
-    
-    
+
+
+# Title
+class TILES(RESOURCES):
+    DESERT = "desert"
+    SEA = "SEA"
+
+
 PURCHASES = {
     "road": {RESOURCES.LUMBER: 1, RESOURCES.brick: 1},
     "settlement": {RESOURCES.LUMBER: 1, RESOURCES.BRICK: 1, RESOURCES.WOOL: 1, RESOURCES.GRAIN: 1},

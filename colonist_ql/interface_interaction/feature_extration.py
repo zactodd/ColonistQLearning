@@ -238,7 +238,7 @@ def extract_land_information(image):
             p = contour_centre(c)
 
             # Only Need to extract text information from non desert triple.
-            if k in facts.RESOURCES_TYPES:
+            if k in facts.RESOURCES:
                 x, y, w, h = cv2.boundingRect(c)
                 text = hex_value(image[y:y + h, x:x + w])
             else:
@@ -348,4 +348,13 @@ def extract_cities(image, settlements_position):
     :return: The position of the roads if they are in the :param settlements_position.
     """
     pass
+
+
+if __name__ == '__main__':
+    image = cv2.imread("../../logs/game_images/game_0/2020_05_02__17_03_58.png")
+    hexes = initial_board_extraction(image)
+    Hexes().add_all(hexes)
+    edges = cc.edges_from_centre(3)
+    real_positions = real_edges_locations(edges)
+    extract_roads(image, real_positions)
 
