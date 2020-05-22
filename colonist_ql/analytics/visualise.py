@@ -61,8 +61,9 @@ def plot_maximum_expected_resources():
     """
     PLot the expected resources per turn given if a settlement was built on every triple point.
     """
-    settlements = [Settlement(t, dummy=True) for t in cc.triples_from_centre(3)]
-    plot_expected_resources_from_settlements(settlements, False)
+    resources, counts = resources_max_expected()
+    plt.bar(resources, counts)
+    plt.show()
 
 
 def plot_player_bank_rates(player):
@@ -72,4 +73,22 @@ def plot_player_bank_rates(player):
     """
     resources, rate = player.bank_rates.items()
     plt.bar(resources, rate)
+    plt.show()
+
+
+def plot_expected_i2c3():
+    """
+    PLot expected resources for using i2c3 metric.
+    """
+    resources, counts = i2c3()
+    plt.bar(resources, counts)
+    plt.show()
+
+
+def plot_expected_i3c5():
+    """
+    PLot expected resources for using i3c5 metric.
+    """
+    resources, counts = i3c5()
+    plt.bar(resources, counts)
     plt.show()
