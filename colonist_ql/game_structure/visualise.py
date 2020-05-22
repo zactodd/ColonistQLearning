@@ -20,7 +20,8 @@ def draw_coords(hexes, coord_format="cube"):
     :param hexes: A collection of Hex objects.
     :param coord_format: The coord format.
     """
-    assert coord_format in ["cube", "axial"], f"The coord_format {coord_format} is not valid, uses either cube or axial."
+    assert coord_format in ["cube", "axial"], \
+        f"The coord_format {coord_format} is not valid, uses either cube or axial."
 
     fig, ax = plt.subplots(1)
     fig.patch.set_facecolor("white")
@@ -59,7 +60,7 @@ def draw_board(hexes, draw_ports=True):
     :param ports: A collection of Port objects
     """
     fig, ax = plt.subplots(1)
-    fig.patch.set_facecolor(facts.RESOURCE_COLOURS["sea"])
+    fig.patch.set_facecolor(facts.RESOURCE_COLOURS[facts.TILES.SEA])
     ax.set_aspect("equal")
     for h in hexes:
         x, y = cc.planer_position(h.cube_coords)
@@ -81,10 +82,10 @@ def draw_board(hexes, draw_ports=True):
     # oi = OffsetImage(plt.imread("../../game_images/settlement_red.png"), zoom=0.02)
     # ab = AnnotationBbox(oi, (0.667, 0.0), frameon=False)
     # ax.add_artist(ab)
-    _draw_roads(cc.all_edges_from_centre(3), "red")
+    # _draw_roads(cc.all_edges_from_centre(3), "red")
     ax.axis("off")
 
-    # ax.scatter(0, 0, alpha=0.0)
+    ax.scatter(0, 0, alpha=0.0)
     plt.show()
 
 

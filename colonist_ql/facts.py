@@ -12,17 +12,27 @@ class RESOURCES(enum):
     ORE = "ore"
 
 
-# Title
+# Title types
 class TILES(RESOURCES):
     DESERT = "desert"
     SEA = "sea"
 
 
+class STRUCTURES(enum):
+    ROAD = "road"
+    SETTLEMENT = "settlement"
+    CITY = "city"
+
+
+class PURCHASABLE(STRUCTURES):
+    DEV_CARD = "dev_card"
+
+
 PURCHASES = {
-    "road": {RESOURCES.LUMBER: 1, RESOURCES.brick: 1},
-    "settlement": {RESOURCES.LUMBER: 1, RESOURCES.BRICK: 1, RESOURCES.WOOL: 1, RESOURCES.GRAIN: 1},
-    "city": {RESOURCES.GRAIN: 2, RESOURCES.ORE: 3},
-    "dev_card": {RESOURCES.WOOL: 1, RESOURCES.GRAIN: 1, RESOURCES.ORE: 1}
+    PURCHASABLE.ROAD: {RESOURCES.LUMBER: 1, RESOURCES.brick: 1},
+    PURCHASABLE.SETTLEMENT: {RESOURCES.LUMBER: 1, RESOURCES.BRICK: 1, RESOURCES.WOOL: 1, RESOURCES.GRAIN: 1},
+    PURCHASABLE.CITY: {RESOURCES.GRAIN: 2, RESOURCES.ORE: 3},
+    PURCHASABLE.DEV_CARD: {RESOURCES.WOOL: 1, RESOURCES.GRAIN: 1, RESOURCES.ORE: 1}
 }
 
 
@@ -49,7 +59,7 @@ PORT_FRAMES = [
 ]
 
 # Build limits
-BUILD_LIMITS = {"settlement": 5, "city": 4, "road": 15}
+BUILD_LIMITS = {STRUCTURES.SETTLEMENT: 5, STRUCTURES.CITY: 4, STRUCTURES.ROAD: 15}
 
 # Development card information.
 DEV_CARDS_TYPES = ["vp", "knight", "mono", "yop", "rb"]

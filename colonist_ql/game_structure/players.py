@@ -156,7 +156,7 @@ class Player:
         :return: True if a settlement can be place otherwise False.
         """
         return self.num_settlements < Board().settlement_limit and \
-               self._can_purchase(facts.PURCHASES["settlement"]) and \
+               self._can_purchase(facts.PURCHASES[facts.STRUCTURES.SETTLEMENT]) and \
                len(self.potential_settlements_locations()) > 0
 
     def can_place_city(self):
@@ -165,7 +165,7 @@ class Player:
         :return: True if a city can be place otherwise False.
         """
         return self.num_cities < Board().settlement_limit and \
-               self._can_purchase(facts.PURCHASES["city"]) and \
+               self._can_purchase(facts.PURCHASES[facts.STRUCTURES.CITY]) and \
                len(self.potential_city_locations()) > 0
 
     def can_place_road(self):
@@ -174,7 +174,7 @@ class Player:
         :return: True if a road can be place otherwise False.
         """
         return len(self.roads) < Board().road_limit and \
-               self._can_purchase(facts.PURCHASES["road"]) and \
+               self._can_purchase(facts.PURCHASES[facts.STRUCTURES.ROAD]) and \
                len(self.potential_road_locations()) > 0
 
     def draw_cards(self, cards):

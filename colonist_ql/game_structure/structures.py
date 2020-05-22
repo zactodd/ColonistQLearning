@@ -58,7 +58,7 @@ class Settlement:
         return self.port is not None
 
     def __str__(self):
-        type_str = "City" if self.is_city else "Settlement"
+        type_str = facts.STRUCTURES.CITY if self.is_city else facts.STRUCTURES.SETTLEMENT
         return f"{type_str} on {string_triple(self.triple)}"
 
 
@@ -77,9 +77,9 @@ class Port:
     @staticmethod
     def _transfer_rates(text):
         if "3:1" in text:
-            return {p: 3 for p in facts.RESOURCES_TYPES}
+            return {p: 3 for p in facts.facts.RESOURCES}
         elif "2:1" in text:
-            for r in facts.RESOURCES_TYPES:
+            for r in facts.facts.RESOURCES:
                 if r in text:
                     return {r: 2}
         raise Exception("Port text is not in a valid format.")
@@ -297,7 +297,7 @@ def string_hex(h):
     """
     value = h.value
     if value is None:
-        return "D" if h.resource == "desert" else "S"
+        return "D" if h.resource == facts.TILES.DESERT else "S"
     elif isinstance(value, int):
         return str(value)
     else:
