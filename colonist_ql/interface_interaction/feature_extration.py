@@ -14,11 +14,11 @@ PORT_IMAGE_DIR = "../../game_images/icons"
 
 
 RESOURCE_COLOUR_RANGES = {
-    "wood": (np.asarray((70, 195, 100)), np.asarray((10, 20, 15))),
-    "brick": (np.asarray((106, 130, 240)), np.asarray((30, 44, 200))),
-    "sheep": (np.asarray((30, 183, 158)), np.asarray((0, 142, 100))),
-    "grain": (np.asarray((60, 220, 255)), np.asarray((5, 150, 180))),
-    "ore": (np.asarray((178, 182, 176)), np.asarray((131, 133, 129))),
+    facts.RESOURCES.LUMBER: (np.asarray((70, 195, 100)), np.asarray((10, 20, 15))),
+    facts.RESOURCES.BRICK: (np.asarray((106, 130, 240)), np.asarray((30, 44, 200))),
+    facts.RESOURCES.WOOL: (np.asarray((30, 183, 158)), np.asarray((0, 142, 100))),
+    facts.RESOURCES.GRAIN: (np.asarray((60, 220, 255)), np.asarray((5, 150, 180))),
+    facts.RESOURCES.ORE: (np.asarray((178, 182, 176)), np.asarray((131, 133, 129))),
     "desert": (np.asarray((230, 230, 220)), np.asarray((115, 140, 180)))
 }
 
@@ -317,7 +317,8 @@ def extract_roads(image, road_positions, padding=7):
     for (x0, x1), (y0, y1) in road_positions:
         x0, y0, x1, y1 = int(x0), int(y0), int(x1), int(y1)
         bb = image[y0 - padding:y1 + padding, x0 - padding:x1 + padding, ...]
-        
+        plt.imshow(bb)
+        plt.show()
         # TODO set up image matching
         # match = match_images(bb, )
 
@@ -347,5 +348,4 @@ def extract_cities(image, settlements_position):
     :return: The position of the roads if they are in the :param settlements_position.
     """
     pass
-
 
