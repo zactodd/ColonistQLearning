@@ -1,5 +1,4 @@
 import colonist_ql.patterns as patterns
-from colonist_ql.game_structure.players import Player
 
 
 class Board(metaclass=patterns.Singleton):
@@ -7,7 +6,7 @@ class Board(metaclass=patterns.Singleton):
         self.player_dict = None
         self.turn_order = None
         self.hex_dict = None
-        
+
         self.settlement_limit = settlement_limit
         self.city_limit = city_limit
         self.road_limit = road_limit
