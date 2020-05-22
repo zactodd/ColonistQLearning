@@ -5,7 +5,6 @@ import colonist_ql.facts as facts
 import colonist_ql.game_structure.cube_coord as cc
 import scipy.stats as stats
 import matplotlib.pyplot as plt
-from collections import defaultdict, Counter
 
 
 def plot_dice_rolls(rolls):
@@ -36,19 +35,7 @@ def plot_resource_from_settlements(settlements, rolls, include_blocked=False, de
     :param include_blocked: If to count block titles.
     :param density: If True shows the per roll expectation based on the rolls otherwise show the total.
     """
-    rolls_dict = defaultdict(Counter)
-    for s in settlements:
-        for c in s.triple:
-            if not include_blocked or not c.is_blocked:
-                h = Hexes().get(c)
-                rolls_dict[h.value][h.resource] += 1 + s.is_city
-    recourse_obtained = Counter()
-    for roll in rolls:
-        for res, i in rolls_dict[roll].items():
-            recourse_obtained[res] += i
-    resources, counts = recourse_obtained.keys(), recourse_obtained.values()
-    if density:
-        counts = [c / len(rolls) for c in counts]
+    resources, counts = resources_from_settlements(settlements, rolls, include_blocked, density)
     plt.bar(resources, counts)
     plt.show()
 
