@@ -1,4 +1,5 @@
 import ast
+import colonist_ql.facts as facts
 from pyparsing import *
 
 # Extracts players name.
@@ -8,14 +9,14 @@ _PLAYER = Regex(r"(\w)+\d*(\w)*(#\d+)?").setName("player")
 _HEX_NUM = Regex(r"\d+").setName("hex_num")
 
 # Extracts hex structure type. i.e. road, settlement or city.
-_STRUCTURE = Regex(r"(settlement)|(city)|(road)").setName("structure")
+_STRUCTURE = Regex(r"|".join(f"({s.value})" for s in facts.STRUCTURES)).setName("structure")
 
 # Extracts two dice values, and players turn.
 _DICE = (Suppress("dice_") + Regex("[1-6]") + Suppress("dice_") + Regex("[1-6]")).setName("dice")
 DICE_ROLL = _PLAYER("player_turn") + Suppress("rolled:") + _DICE("dice_rolled")
 
 # Resource types, and who got those resources.
-_RESOURCE = Regex(r"(ore)|(grain)|(lumber)|(wool)|(brick)").setName("resource")
+_RESOURCE = Regex(r"|".join(f"({s.value})" for s in facts.RESOURCES)).setName("resource")
 _RESOURCES = _RESOURCE * (1,)
 GOT_RESOURCES = Dict(Group(_PLAYER + Suppress("got:") + _RESOURCES) * (1, 4))("got_resource")
 
@@ -71,7 +72,7 @@ BANK_TRADE = Group(
 
 # Determine who is robbing who and what was stolen.
 ROBBER_PLACEMENT = Suppress(_PLAYER) + Suppress("moved robber") + Suppress("to tile:") + _HEX_NUM("moved_to")
-PERSONAL_ROBBING = Suppress("You stole:") + _RESOURCE("gain_resourse") + Suppress("from:") + Suppress(_PLAYER)
+PERSONAL_ROBBING = Suppress("You stole:") + _RESOURCE("gain_resource") + Suppress("from:") + Suppress(_PLAYER)
 STOLE_CARD = _PLAYER("player_robbing") + Suppress("stole card from:") + _PLAYER("player_stolen")
 ROBBER_ACTION = Group(ROBBER_PLACEMENT + STOLE_CARD + PERSONAL_ROBBING * (0, 1))("robbing_info")
 
