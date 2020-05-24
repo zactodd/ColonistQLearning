@@ -36,7 +36,7 @@ class Player:
 
     @staticmethod
     def _init_bank_rate(ports):
-        rates = {r: 4 for r in facts.facts.RESOURCES}
+        rates = {r: 4 for r in facts.RESOURCES}
         if len(ports) == 0:
             return rates
         for p in ports:
@@ -78,7 +78,7 @@ class Player:
         Calculates a players VP
         :return:
         """
-        cards_vp = self.dev_cards.count("vp")
+        cards_vp = self.dev_cards.count(facts.DEV_CARD.VP)
         threshold_vp = 2 * (self.has_largest_army + self.has_longest_road)
         return self.settlement_vp() + cards_vp + threshold_vp
 
@@ -102,7 +102,7 @@ class Player:
         for r, c in self.hand.items():
             rate = self.bank_rates[r]
             if rate <= c:
-                options.extend([({r: rate}, {i: 1}) for i in facts.facts.RESOURCES - {r}])
+                options.extend([({r: rate}, {i: 1}) for i in facts.RESOURCES - {r}])
         for i, req in facts.PURCHASES.items():
             if all(self.hand[r] > c for r, c in req.items()):
                 options.append((req, i))
@@ -183,7 +183,7 @@ class Player:
 
     def play_dev_card(self, dev_card):
         # TODO implement other cases
-        if dev_card == "knight":
+        if dev_card == facts.DEV_CARD.KNIGHT:
             self.knights += 1
             self._update_vp()
 

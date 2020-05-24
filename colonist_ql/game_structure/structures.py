@@ -77,9 +77,9 @@ class Port:
     @staticmethod
     def _transfer_rates(text):
         if "3:1" in text:
-            return {p: 3 for p in facts.facts.RESOURCES}
+            return {p: 3 for p in facts.RESOURCES}
         elif "2:1" in text:
-            for r in facts.facts.RESOURCES:
+            for r in facts.RESOURCES:
                 if r in text:
                     return {r: 2}
         raise Exception("Port text is not in a valid format.")
