@@ -1,10 +1,10 @@
 import functools
 import operator
-import enum
+from enum import Enum
 
 
 # Game resources types
-class RESOURCES(enum):
+class RESOURCES(Enum):
     LUMBER = "lumber"
     BRICK = "brick"
     WOOL = "wool"
@@ -13,28 +13,46 @@ class RESOURCES(enum):
 
 
 # Title types
-class TILES(RESOURCES):
+class TILES(Enum):
+    LUMBER = "lumber"
+    BRICK = "brick"
+    WOOL = "wool"
+    GRAIN = "grain"
+    ORE = "ore"
     DESERT = "desert"
     SEA = "sea"
 
 
-class STRUCTURES(enum):
+# Structures types
+class STRUCTURES(Enum):
     ROAD = "road"
     SETTLEMENT = "settlement"
     CITY = "city"
 
 
-class PURCHASABLE(STRUCTURES):
+# Purchasable types
+class PURCHASABLE(Enum):
+    ROAD = "road"
+    SETTLEMENT = "settlement"
+    CITY = "city"
     DEV_CARD = "dev_card"
 
 
+# Dev cards
+class DEV_CARD:
+    VP = "vp"
+    KNIGHT = "knight"
+    MONO = "monopoly"
+    YOP = "year of plenty"
+    RB = "road building"
+
+
 PURCHASES = {
-    PURCHASABLE.ROAD: {RESOURCES.LUMBER: 1, RESOURCES.brick: 1},
+    PURCHASABLE.ROAD: {RESOURCES.LUMBER: 1, RESOURCES.BRICK: 1},
     PURCHASABLE.SETTLEMENT: {RESOURCES.LUMBER: 1, RESOURCES.BRICK: 1, RESOURCES.WOOL: 1, RESOURCES.GRAIN: 1},
     PURCHASABLE.CITY: {RESOURCES.GRAIN: 2, RESOURCES.ORE: 3},
     PURCHASABLE.DEV_CARD: {RESOURCES.WOOL: 1, RESOURCES.GRAIN: 1, RESOURCES.ORE: 1}
 }
-
 
 RESOURCE_COLOURS = {
     TILES.SEA: "steelblue",
@@ -62,8 +80,7 @@ PORT_FRAMES = [
 BUILD_LIMITS = {STRUCTURES.SETTLEMENT: 5, STRUCTURES.CITY: 4, STRUCTURES.ROAD: 15}
 
 # Development card information.
-DEV_CARDS_TYPES = ["vp", "knight", "mono", "yop", "rb"]
-DEV_CARDS = 5 * ["vp"] + 14 * ["knight"] + 2 * ["mono", "yop", "rb"]
+DEV_CARDS = 5 * [DEV_CARD.VP] + 14 * [DEV_CARD.KNIGHT] + 2 * [DEV_CARD.MONO, DEV_CARD.YOP, DEV_CARD.RB]
 STARTING_NUM_DEV = len(DEV_CARDS)
 
 PORT_PLACEMENT = {
