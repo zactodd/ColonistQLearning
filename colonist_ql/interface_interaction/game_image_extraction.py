@@ -18,18 +18,22 @@ def game_image():
     :raise: if there is no game raise exceptions.GameNotFoundException()
     """
     current_window = gw.getActiveWindow()
-    if "Colonist: Play" in current_window.title:
-        screenshot = ImageGrab.grab()
-        return cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2BGR)
-
     for title in gw.getAllTitles():
         if "Colonist: Play" in title:
             game_window = gw.getWindowsWithTitle(title)[0]
             game_window.minimize()
             game_window.maximize()
             time.sleep(0.4)
-            screenshot = ImageGrab.grab()
-            image = cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2BGR)
+
+            # Screen capture
+            image = ImageGrab.grab()
+            image = np.array(image)
+
+            # Removing boarder
+            h, w, *_ = image.shape
+            image = image[10:h - 10, 10: w - 10]
+
+            image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
             game_window.minimize()
             current_window.maximize()
             return image
