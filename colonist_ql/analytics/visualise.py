@@ -97,7 +97,7 @@ def plot_expected_i3c5():
     plt.show()
 
 
-def plot_triples_heatmap():
+def plot_triples_heatmap(n_colours=13):
     """
     Plots the heatmap of all of the triples.
     """
@@ -105,7 +105,7 @@ def plot_triples_heatmap():
     fig.patch.set_facecolor(facts.RESOURCE_COLOURS[facts.TILES.SEA])
     ax.set_aspect("equal")
 
-    colours = cm.get_cmap("PuRd", 13)
+    colours = cm.get_cmap("PuRd", n_colours)
     for t in cc.triples_from_centre(3):
         s = 0
         for c in t:
@@ -113,7 +113,43 @@ def plot_triples_heatmap():
             if isinstance(h.value, int):
                 s += facts.DICE_PIPS[h.value]
         x, y = cc.triple_planner_position(t)
-        plt.scatter(x, y, c=[colours(s)], s=1.6 ** s, zorder=10, alpha=0.8)
+        plt.scatter(x, y, c=[colours(s)], s=1.6 ** (13 * (s / n_colours)), zorder=10, alpha=0.8)
+
+    _draw_hexes(Hexes().get_all(), ax)
+    _draw_ports()
+
+    ax.axis("off")
+    # ax.scatter(0, 0, alpha=0.0)
+    plt.show()
+
+
+def plot_triples_diversity_heatmap(n_colours=13):
+    """
+    Plots the heatmap of all of the triples take diversity.
+    """
+    fig, ax = plt.subplots(1)
+    fig.patch.set_facecolor(facts.RESOURCE_COLOURS[facts.TILES.SEA])
+    ax.set_aspect("equal")
+    colours = cm.get_cmap("PuRd", n_colours)
+
+    resources_counters = Counter()
+    triples_pips = defaultdict(Counter)
+    triples = cc.triples_from_centre(3)
+    been_counted = set()
+    for t in triples:
+        for c in t:
+            h = Hexes().get(c)
+            if isinstance(h.value, int):
+                pips = facts.DICE_PIPS[h.value]
+                if h not in been_counted:
+                    resources_counters[h.resource] += pips
+                    been_counted.add(h)
+                triples_pips[t][h.resource] += pips
+
+    for t, resource_pips in triples_pips.items():
+        s = int(sum(p / resources_counters[r] for r, p in resource_pips.items()) * (n_colours - 1))
+        x, y = cc.triple_planner_position(t)
+        plt.scatter(x, y, c=[colours(s)], s=1.6 ** (13 * (s / n_colours)), zorder=10, alpha=0.8)
 
     _draw_hexes(Hexes().get_all(), ax)
     _draw_ports()
