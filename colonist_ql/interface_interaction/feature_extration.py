@@ -10,8 +10,6 @@ import colonist_ql.facts as facts
 from skimage import measure
 import os
 
-PORT_IMAGE_DIR = "../../game_images/icons"
-
 
 RESOURCE_COLOUR_RANGES = {
     facts.RESOURCES.LUMBER: (np.asarray((70, 195, 100)), np.asarray((10, 20, 15))),
@@ -213,7 +211,7 @@ def extract_port(image):
         )
         if text == "2:1":
             icon = image[y + 5:y + h - 20, x + 6:x + w - 6]
-            port_type = match_images(icon, PORT_IMAGE_DIR)[:-4]
+            port_type = match_images(icon, facts.PORT_IMAGE_DIR)[:-4]
             text = f"{text}\n{port_type}"
         return text
     else:
@@ -226,36 +224,20 @@ def extract_land_information(image):
     :param image: The game image.
     :return: A set of Hex(). e.g. {..., Hex(...), ...}.
     """
-    contours_dict = {}
-    for k, (upper, lower) in RESOURCE_COLOUR_RANGES.items():
-        mask = cv2.inRange(image, lower, upper)
-        contours_dict[k] = filter_contours_by_area(find_contours(mask))
+    contours_dict = {
+        k: filter_contours_by_area(find_contours(cv2.inRange(image, lower, upper)))
+        for k, (upper, lower) in RESOURCE_COLOUR_RANGES.items()
+    }
 
-    classes = {}
-    points = []
-    for k, conts in contours_dict.items():
-        for c in conts:
-            p = contour_centre(c)
+    classes = {
+        contour_centre(c): (k, hex_value(utils.contour_bounding_box(image, c)) if k in facts.RESOURCES else None)
+        for k, contour in contours_dict.items() for c in contour
+    }
 
-            # Only Need to extract text information from non desert triple.
-            if k in facts.RESOURCES:
-                x, y, w, h = cv2.boundingRect(c)
-                text = hex_value(image[y:y + h, x:x + w])
-            else:
-                text = None
-            classes[p] = (k, text)
-            points.append(p)
-
-    x, y = list(zip(*points))
+    x, y = list(zip(*classes.keys()))
     cx, cy = np.mean(x), np.mean(y)
-    size = max([utils.distance((cx, cy), p) for p in points]) / 3
-
-    hexes = set()
-    for x, y in points:
-        ap = x - cx, y - cy
-        r, v = classes[(x, y)]
-        hexes.add(Hex(cc.pixel_to_cube(ap, size), (x, y), r, v))
-    return hexes
+    size = max([utils.distance((cx, cy), p) for p in classes.keys()]) / 3
+    return {Hex(cc.pixel_to_cube((x - cx, y - cy), size), (x, y), r, v) for (x, y), (r, v) in classes.items()}
 
 
 def extracts_sea_information(image, board_centre):
@@ -276,9 +258,7 @@ def extracts_sea_information(image, board_centre):
     points = []
     for c in contours:
         points.append(contour_centre(c))
-
-        x, y, w, h = cv2.boundingRect(c)
-        ports.append(extract_port(image[y:y + h, x:x + w]))
+        ports.append(extract_port(utils.contour_bounding_box(image, c)))
 
     x, y = list(zip(*points))
     cx, cy = np.mean(x), np.mean(y)
@@ -349,12 +329,4 @@ def extract_cities(image, settlements_position):
     """
     pass
 
-
-if __name__ == '__main__':
-    image = cv2.imread("../../logs/game_images/game_0/2020_05_02__17_03_58.png")
-    hexes = initial_board_extraction(image)
-    Hexes().add_all(hexes)
-    edges = cc.edges_from_centre(3)
-    real_positions = real_edges_locations(edges)
-    extract_roads(image, real_positions)
 
