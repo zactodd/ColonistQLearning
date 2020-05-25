@@ -1,8 +1,7 @@
-from abc import ABC, abstractmethod
+from abc import abstractmethod
 from colonist_ql.game_structure import cube_coord as cc
 import colonist_ql.patterns as patterns
 import colonist_ql.facts as facts
-import colonist_ql.utils as utils
 import numpy as np
 
 
@@ -58,7 +57,7 @@ class Settlement:
         return self.port is not None
 
     def __str__(self):
-        type_str = facts.STRUCTURES.CITY if self.is_city else facts.STRUCTURES.SETTLEMENT
+        type_str = (facts.STRUCTURES.CITY if self.is_city else facts.STRUCTURES.SETTLEMENT).value
         return f"{type_str} on {string_triple(self.triple)}"
 
 
@@ -80,7 +79,7 @@ class Port:
             return {p: 3 for p in facts.RESOURCES}
         elif "2:1" in text:
             for r in facts.RESOURCES:
-                if r in text:
+                if r.value in text:
                     return {r: 2}
         raise Exception("Port text is not in a valid format.")
 

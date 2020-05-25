@@ -2,9 +2,6 @@ import cv2
 import pytesseract
 import matplotlib.pyplot as plt
 from itertools import product
-import colonist_ql.game_structure.cube_coord as cc
-import colonist_ql.game_structure.visualise as visualise
-import colonist_ql.utils as utils
 from colonist_ql.game_structure.structures import *
 import colonist_ql.facts as facts
 from skimage import measure
@@ -156,7 +153,6 @@ def hex_value(image):
     """
     Get the dice value of a hex.
     :param image: The game image.
-    :param contour: The contour of the hex.
     :return: An int of the hex value or None if a invalid value is found.
     """
     grey = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -189,6 +185,10 @@ def match_images(image, candidate_directory):
         test_image = cv2.resize(test_image, (w, h), interpolation=cv2.INTER_AREA)
         results[t] = measure.compare_ssim(image, test_image, multichannel=True)
     return max(results.keys(), key=lambda x: results[x])
+
+
+def match_image_change(image, previous_image, candidate_directory):
+    return match_images(image, candidate_directory) if image != previous_image else None
 
 
 def extract_port(image):

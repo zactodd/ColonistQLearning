@@ -119,7 +119,6 @@ def plot_triples_heatmap(n_colours=13):
     _draw_ports()
 
     ax.axis("off")
-    # ax.scatter(0, 0, alpha=0.0)
     plt.show()
 
 
