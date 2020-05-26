@@ -7,6 +7,7 @@ import colonist_ql.facts as facts
 import colonist_ql.utils as utils
 from skimage import measure
 import os
+from collections import defaultdict
 
 
 RESOURCE_COLOUR_RANGES = {
@@ -172,7 +173,7 @@ def hex_value(image):
         return None
 
 
-def match_images(image, candidate_directory):
+def match_images(image, candidate_directory, threshold=None):
     """
     Determines which image is the best match from a collection of images.
     :param image:
@@ -183,13 +184,13 @@ def match_images(image, candidate_directory):
     results = {}
     for t in next(os.walk(candidate_directory))[2]:
         test_image = cv2.imread(f"{candidate_directory}/{t}")
+        test_image = cv2.cvtColor(test_image, cv2.COLOR_BGRA2BGR)
         test_image = cv2.resize(test_image, (w, h), interpolation=cv2.INTER_AREA)
         results[t] = measure.compare_ssim(image, test_image, multichannel=True)
-    return max(results.keys(), key=lambda x: results[x])
-
-
-def match_image_change(image, previous_image, candidate_directory):
-    return match_images(image, candidate_directory) if image != previous_image else None
+    if threshold is not None and all(threshold > v for v in results.values()):
+        return None
+    else:
+        return max(results, key=lambda x: results[x])
 
 
 def extract_port(image):
@@ -304,21 +305,24 @@ def extract_roads(image, road_positions, padding=7):
         # match = match_images(bb, )
 
 
-def extract_settlements(image, open_settlement_positions, padding=30):
+def extract_settlements(image, triples):
     """
     Extracts the positions of the settlements given a set of possible positions.
     :param image: The game image.
-    :param open_settlement_positions: A set of bounding boxes representing possible settlement locations.
-    :param padding: THe padding to add to ede of the positions.
+    :param triples: A set of triples representing the possible settlement positions.
     :return: The position of the roads if they are in the :param open_settlement_positions.
     """
-
-    for x, y in open_settlement_positions:
+    triples_colour = defaultdict(set)
+    for t in triples:
+        x, y = real_triple_location(t)
         x, y = int(x), int(y)
-        bb = image[y - padding:y + padding, x - padding:x + padding, ...]
+        bb = image[y - 40:y + 30, x - 30:x + 30, ...]
 
-        # TODO set up image matching
-        match = match_images(bb, )
+        match = match_images(bb, facts.SETTLEMENT_IMAGES_DIR, 0.10)
+        if match is not None:
+            colour = match.split("_")[1][:-4]
+            triples_colour[colour].add(t)
+    return triples_colour
 
 
 def extract_cities(image, settlements_position):
