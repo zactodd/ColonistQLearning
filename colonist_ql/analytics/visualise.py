@@ -264,11 +264,11 @@ def _draw_roads(roads, colour):
         plt.plot(h, v, c=colour, linewidth=5)
 
 
-def _draw_settlements(settlement, colours):
-    h_positions = []
-    v_positions = []
-    for s in settlement:
-        h, v = zip(*cc.triple_planner_position(s.triple))
-        h_positions.append(np.mean(h))
-        v_positions.append(np.mean(v))
-    plt.scatter(h_positions, v_positions, c="b", marker="h", s=400, zorder=10, alpha=0.7)
+def _draw_settlements(colours_triples, ax):
+    for c, v in colours_triples.items():
+        for t in v:
+            x, y = cc.triple_planner_position(t)
+            image = plt.imread(f"{facts.SETTLEMENT_IMAGES_DIR}/settlement_{c}.png")
+            oi = OffsetImage(image, zoom=0.15)
+            ab = AnnotationBbox(oi, (x, y), frameon=False)
+            ax.add_artist(ab)
