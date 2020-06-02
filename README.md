@@ -4,7 +4,7 @@ Analysis and Q learning method for colonist.io
 ## Software Installations
 Download and install [Annaconda3](https://www.anaconda.com/distribution/).
 
-#### GPU Usage Software Installation
+#### GPU  Software Installation
 Download and install [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/).
 
 Install Visual Studio [Build Tools 2019 and Visual C++ build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (link downloads the .exe).
@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 # Analysis
 ## Initial Placement
-A notebook for evualuating inital placament position can be found [here](https://github.com/zactodd/ColonistQLearning/blob/master/colonist_ql/analytics/notebooks/starting_placements.ipynb). It shows a varity of metrics on what vertices are better to start on.
+A notebook for evaluating inital placament position can be found [here](https://github.com/zactodd/ColonistQLearning/blob/master/colonist_ql/analytics/notebooks/starting_placements.ipynb). It shows a varity of metrics on what vertices are better to start on.
 
 # Citation
 Use this bibtex to cite this repository:
