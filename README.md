@@ -21,5 +21,16 @@ conda activate QL
 pip install -r requirements.txt     
 ````
 
+# Citation
+Use this bibtex to cite this repository:
 
-
+```
+@misc{colonist_ql,
+  title={Analysis and Q learning in Catan},
+  author={Zachary Todd},
+  year={2020},
+  publisher={Github},
+  journal={GitHub repository},
+  howpublished={\url{https://github.com/zactodd/ColonistQLearning}},
+}
+```
