@@ -1,0 +1,6 @@
+# packages in environment:
+#
+# Name                    Version                   Build  Channel
+cairo                     1.14.12              hf171d8a_3
+swig                      3.0.12               h047fa9f_3
+tesseract                 4.1.1                h328755b_1    conda-forge
