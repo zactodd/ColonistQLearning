@@ -276,6 +276,11 @@ def spiral_order(coords):
 
 
 def rows_order(coords):
+    """
+    Orders the vertical and horizontal position.
+    :param coords: A iterable of cube coords.
+    :return: A sorted list of cube coords.
+    """
     return sorted(coords, key=lambda c: (c[1], c[0]))
 
 
