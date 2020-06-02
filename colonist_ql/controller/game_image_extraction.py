@@ -11,12 +11,20 @@ from datetime import datetime
 import pygetwindow as gw
 
 
+def blocking_til_play():
+    for title in gw.getAllTitles():
+        if "Colonist: Play" in title:
+            break
+        time.sleep(0.5)
+
+
 def game_image():
     """
     Obtains a screenshot of the current game state.
     :return: image of the game.
     :raise: if there is no game raise exceptions.GameNotFoundException()
     """
+    time.sleep(3)
     current_window = gw.getActiveWindow()
     for title in gw.getAllTitles():
         if "Colonist: Play" in title:

@@ -1,4 +1,4 @@
-from colonist_ql.interface_interaction.utils import get_chrome_driver
+from colonist_ql.controller.utils import get_chrome_driver
 
 DRIVER = get_chrome_driver()
 URL = "https://colonist.io/"

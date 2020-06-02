@@ -2,7 +2,7 @@ import cv2
 import pytesseract
 import matplotlib.pyplot as plt
 from itertools import product
-from colonist_ql.game_structure.structures import *
+from colonist_ql.model.structures import *
 import colonist_ql.facts as facts
 import colonist_ql.utils as utils
 from skimage import measure

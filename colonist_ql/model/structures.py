@@ -1,5 +1,5 @@
 from abc import abstractmethod
-from colonist_ql.game_structure import cube_coord as cc
+from colonist_ql.model import cube_coord as cc
 import colonist_ql.patterns as patterns
 import colonist_ql.facts as facts
 import numpy as np

@@ -1,6 +1,6 @@
 import colonist_ql.patterns as patterns
-import colonist_ql.interface_interaction.feature_extration as fe
-from colonist_ql.game_structure.board import Board
+import colonist_ql.controller.feature_extration as fe
+from colonist_ql.model.board import Board
 
 
 class ExtractorHandler(metaclass=patterns.Singleton):

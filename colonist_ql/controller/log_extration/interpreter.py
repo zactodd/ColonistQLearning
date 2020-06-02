@@ -1,5 +1,5 @@
-from colonist_ql.interface_interaction.log_extration.parser import TURN, OPENING, GAME, CLOSING_TURN
-from colonist_ql.game_structure.board import Board
+from colonist_ql.controller.log_extration.parser import TURN, OPENING, GAME, CLOSING_TURN
+from colonist_ql.model.board import Board
 
 
 def interpret_turn(turn_string):

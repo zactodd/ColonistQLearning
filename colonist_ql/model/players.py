@@ -1,6 +1,6 @@
 import colonist_ql.facts as facts
-import colonist_ql.game_structure.structures as structures
-from colonist_ql.game_structure.board import Board
+import colonist_ql.model.structures as structures
+from colonist_ql.model.board import Board
 from collections import Counter
 
 
