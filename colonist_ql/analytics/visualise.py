@@ -175,9 +175,10 @@ def draw_coords(hexes, coord_format="cube"):
     format_dict = {
         "cube": _draw_coords_cube_format,
         "axial": _draw_coords_spiral_format,
-        "spiral": _draw_coords_spiral_format
+        "spiral": _draw_coords_spiral_format,
+        "rows": _draw_coords_cube_format_rows
     }
-    assert coord_format in ["cube", "axial", "spiral"], \
+    assert coord_format in format_dict, \
         f"The coord_format {coord_format} is not valid, uses one of " + ", ".join(format_dict.keys()) + "."
 
     fig, ax = plt.subplots(1)
@@ -229,7 +230,17 @@ def _draw_coords_spiral_format(hexes, ax):
 
         if i == len(hexes):
             i = "x"
+        ax.text(x, y, i, color="black", ha="center", va="center", size=20)
 
+
+def _draw_coords_cube_format_rows(hexes, ax):
+    for i, c in enumerate(cc.rows_order([h.cube_coords for h in hexes]), start=1):
+        x, y = cc.planer_position(c)
+        patch = RegularPolygon((x, y), numVertices=6, facecolor="white", radius=2 / 3, orientation=0, edgecolor="k")
+        ax.add_patch(patch)
+
+        if i == np.ceil(len(hexes) / 2):
+            i = "x"
         ax.text(x, y, i, color="black", ha="center", va="center", size=20)
 
 
@@ -301,6 +312,3 @@ def _draw_settlements(colours_triples, ax):
             oi = OffsetImage(image, zoom=0.15)
             ab = AnnotationBbox(oi, (x, y), frameon=False)
             ax.add_artist(ab)
-
-
-draw_coords(random_hexes(), "spiral")

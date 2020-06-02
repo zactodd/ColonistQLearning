@@ -275,6 +275,10 @@ def spiral_order(coords):
     return sorted(coords, key=lambda c: (distance_from_centre(c), clockwise_centre_angle(c)), reverse=True)
 
 
+def rows_order(coords):
+    return sorted(coords, key=lambda c: (c[1], c[0]))
+
+
 def cube_round(c):
     """
     Rounds cube coords.
