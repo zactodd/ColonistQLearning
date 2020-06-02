@@ -171,37 +171,66 @@ def draw_coords(hexes, coord_format="cube"):
     :param hexes: A collection of Hex objects.
     :param coord_format: The coord format.
     """
-    assert coord_format in ["cube", "axial"], \
-        f"The coord_format {coord_format} is not valid, uses either cube or axial."
+
+    format_dict = {
+        "cube": _draw_coords_cube_format,
+        "axial": _draw_coords_spiral_format,
+        "spiral": _draw_coords_spiral_format
+    }
+    assert coord_format in ["cube", "axial", "spiral"], \
+        f"The coord_format {coord_format} is not valid, uses one of " + ", ".join(format_dict.keys()) + "."
 
     fig, ax = plt.subplots(1)
     fig.patch.set_facecolor("white")
     ax.set_aspect("equal")
+
+    format_dict[coord_format](hexes, ax)
+
+    ax.scatter(0, 0, alpha=0.0)
+    ax.axis("off")
+    plt.show()
+
+
+def _draw_coords_cube_format(hexes, ax):
     for h in hexes:
 
         x, y = cc.planer_position(h.cube_coords)
         patch = RegularPolygon((x, y), numVertices=6, facecolor="white", radius=2 / 3, orientation=0, edgecolor="k")
         ax.add_patch(patch)
 
-        if coord_format == "cube":
-            q, r, s = h.cube_coords
-            q, r, s = int(q), int(r), int(s)
-            if (q, r, s) == (0, 0, 0):
-                q, r, s, = "x", "z", "y"
-            ax.text(x - 1 / 3 + 0.05, y + 2 / 9 - 0.04, q, color="red", ha="center", va="center", size=16)
-            ax.text(x + 1 / 3 - 0.05, y + 2 / 9 - 0.04, r, color="blue", ha="center", va="center", size=16)
-            ax.text(x, y - 4 / 9 + 0.12, s, color="green", ha="center", va="center", size=16)
-        elif coord_format == "axial":
-            q, r = cc.cube_to_axial(h.cube_coords)
-            q, r = int(q), int(r)
-            if (q, r) == (0, 0):
-                q, r = "q", "r"
-            ax.text(x - 1 / 3 + 0.05, y, q, color="dodgerblue", ha="center", va="center", size=18)
-            ax.text(x + 1 / 3 - 0.05, y, r, color="limegreen", ha="center", va="center", size=18)
+        q, r, s = h.cube_coords
+        q, r, s = int(q), int(r), int(s)
+        if (q, r, s) == (0, 0, 0):
+            q, r, s, = "x", "z", "y"
+        ax.text(x - 1 / 3 + 0.05, y + 2 / 9 - 0.04, q, color="red", ha="center", va="center", size=16)
+        ax.text(x + 1 / 3 - 0.05, y + 2 / 9 - 0.04, r, color="blue", ha="center", va="center", size=16)
+        ax.text(x, y - 4 / 9 + 0.12, s, color="green", ha="center", va="center", size=16)
 
-    ax.scatter(0, 0, alpha=0.0)
-    ax.axis("off")
-    plt.show()
+
+def _draw_coords_axial_format(hexes, ax):
+    for h in hexes:
+        x, y = cc.planer_position(h.cube_coords)
+        patch = RegularPolygon((x, y), numVertices=6, facecolor="white", radius=2 / 3, orientation=0, edgecolor="k")
+        ax.add_patch(patch)
+
+        q, r = cc.cube_to_axial(h.cube_coords)
+        q, r = int(q), int(r)
+        if (q, r) == (0, 0):
+            q, r = "q", "r"
+        ax.text(x - 1 / 3 + 0.05, y, q, color="dodgerblue", ha="center", va="center", size=18)
+        ax.text(x + 1 / 3 - 0.05, y, r, color="limegreen", ha="center", va="center", size=18)
+
+
+def _draw_coords_spiral_format(hexes, ax):
+    for i, c in enumerate(cc.spiral_order([h.cube_coords for h in hexes]), start=1):
+        x, y = cc.planer_position(c)
+        patch = RegularPolygon((x, y), numVertices=6, facecolor="white", radius=2 / 3, orientation=0, edgecolor="k")
+        ax.add_patch(patch)
+
+        if i == len(hexes):
+            i = "x"
+
+        ax.text(x, y, i, color="black", ha="center", va="center", size=20)
 
 
 def draw_board(hexes, draw_ports=True):
@@ -272,3 +301,6 @@ def _draw_settlements(colours_triples, ax):
             oi = OffsetImage(image, zoom=0.15)
             ab = AnnotationBbox(oi, (x, y), frameon=False)
             ax.add_artist(ab)
+
+
+draw_coords(random_hexes(), "spiral")
