@@ -21,6 +21,10 @@ conda activate QL
 pip install -r requirements.txt     
 ````
 
+# Analysis
+## Initial Placement
+A notebook for evualuating inital placament position can be found [here](https://github.com/zactodd/ColonistQLearning/blob/master/colonist_ql/analytics/notebooks/starting_placements.ipynb). It shows a varity of metrics on what vertices are better to start on.
+
 # Citation
 Use this bibtex to cite this repository:
 
