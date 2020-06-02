@@ -1,6 +1,6 @@
 import numpy as np
 from collections import defaultdict, Counter
-from colonist_ql.game_structure.structures import *
+from colonist_ql.model.structures import *
 
 
 def dice_distribution(size):
