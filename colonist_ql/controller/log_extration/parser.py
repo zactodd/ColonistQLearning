@@ -20,10 +20,15 @@ _RESOURCE = Regex(r"|".join(f"({s.value})" for s in facts.RESOURCES)).setName("r
 _RESOURCES = _RESOURCE * (1,)
 GOT_RESOURCES = Dict(Group(_PLAYER + Suppress("got:") + _RESOURCES) * (1, 4))("got_resource")
 
-
 # Extracts if other victory point conditions.
-RECEIVED_LARGEST_ARMY = (_PLAYER + Suppress("received largest army")).setName("received_largest_army")
-RECEIVED_LONGEST_ROAD = _PLAYER + Suppress("received longest road").setName("received_longest_road")
+RECEIVED_LARGEST_ARMY = (
+    (_PLAYER + Suppress("received largest army")) |
+    (Suppress("largest army has passed from:") + Suppress(_PLAYER) + Suppress("to:") + _PLAYER)
+).setName("received_largest_army")
+RECEIVED_LONGEST_ROAD = (
+        (_PLAYER + Suppress("received longest road")) |
+        (Suppress("longest road has passed from:") + Suppress(_PLAYER) + Suppress("to:") + _PLAYER)
+).setName("received_longest_road")
 
 # Determines what player is building a what structure.
 BOT_STRUCTURE_PLACEMENT = (
