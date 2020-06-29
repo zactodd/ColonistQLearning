@@ -63,7 +63,12 @@ RESOURCE_COLOURS = {
     RESOURCES.WOOL: "lightgreen",
     RESOURCES.GRAIN: "gold",
     RESOURCES.ORE: "slategrey",
-    RESOURCES.BRICK: "orange"
+    RESOURCES.BRICK: "orange",
+    TILES.LUMBER: "forestgreen",
+    TILES.WOOL: "lightgreen",
+    TILES.GRAIN: "gold",
+    TILES.ORE: "slategrey",
+    TILES.BRICK: "orange"
 }
 
 # Board Information

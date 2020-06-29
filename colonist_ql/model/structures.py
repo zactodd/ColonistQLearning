@@ -329,7 +329,8 @@ def random_hexes():
     Obtains random hexes with resources and dice values.
     :return: A set of hexes.
     """
-    dice_pips = facts.DICE_VALUES.copy().reverse()
+    dice_pips = facts.DICE_VALUES.copy()
+    dice_pips.reverse()
     resources = facts.HEX_RESOURCES.copy()
     random.shuffle(resources)
     return {
