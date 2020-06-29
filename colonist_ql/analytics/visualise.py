@@ -104,7 +104,14 @@ def plot_triples_heatmap(n_colours=13):
     fig, ax = plt.subplots(1)
     fig.patch.set_facecolor(facts.RESOURCE_COLOURS[facts.TILES.SEA])
     ax.set_aspect("equal")
+    _triples_heatmap(n_colours, ax)
+    _draw_board(Hexes().get_all(), ax)
 
+    ax.axis("off")
+    plt.show()
+
+
+def _triples_heatmap(n_colours, ax):
     colours = cm.get_cmap("PuRd", n_colours)
     for t in cc.triples_from_centre(3):
         s = 0
@@ -113,13 +120,7 @@ def plot_triples_heatmap(n_colours=13):
             if isinstance(h.value, int):
                 s += facts.DICE_PIPS[h.value]
         x, y = cc.triple_planner_position(t)
-        plt.scatter(x, y, c=[colours(s)], s=1.6 ** (13 * (s / n_colours)), zorder=10, alpha=0.8)
-
-    _draw_hexes(Hexes().get_all(), ax)
-    _draw_ports()
-
-    ax.axis("off")
-    plt.show()
+        ax.scatter(x, y, c=[colours(s)], s=1.6 ** (13 * (s / n_colours)), zorder=10, alpha=0.8)
 
 
 def plot_triples_diversity_heatmap(n_colours=13):
@@ -129,6 +130,14 @@ def plot_triples_diversity_heatmap(n_colours=13):
     fig, ax = plt.subplots(1)
     fig.patch.set_facecolor(facts.RESOURCE_COLOURS[facts.TILES.SEA])
     ax.set_aspect("equal")
+    _triples_diversity_heatmap(n_colours, ax)
+    _draw_board(Hexes().get_all(), ax)
+
+    ax.axis("off")
+    plt.show()
+
+
+def _triples_diversity_heatmap(n_colours, ax):
     colours = cm.get_cmap("PuRd", n_colours)
 
     resources_counters = Counter()
@@ -148,14 +157,7 @@ def plot_triples_diversity_heatmap(n_colours=13):
     for t, resource_pips in triples_pips.items():
         s = int(sum(p / resources_counters[r] for r, p in resource_pips.items()) * (n_colours - 1))
         x, y = cc.triple_planner_position(t)
-        plt.scatter(x, y, c=[colours(s)], s=1.6 ** (13 * (s / n_colours)), zorder=10, alpha=0.8)
-
-    _draw_hexes(Hexes().get_all(), ax)
-    _draw_ports()
-
-    ax.axis("off")
-    # ax.scatter(0, 0, alpha=0.0)
-    plt.show()
+        ax.scatter(x, y, c=[colours(s)], s=1.6 ** (13 * (s / n_colours)), zorder=10, alpha=0.8)
 
 
 def value_colours(value):
@@ -165,7 +167,7 @@ def value_colours(value):
         return "black"
 
 
-def draw_coords(hexes, coord_format="cube"):
+def plot_coords(hexes, coord_format="cube"):
     """
     Draws the coords of the triple.
     :param hexes: A collection of Hex objects.
@@ -194,7 +196,6 @@ def draw_coords(hexes, coord_format="cube"):
 
 def _draw_coords_cube_format(hexes, ax):
     for h in hexes:
-
         x, y = cc.planer_position(h.cube_coords)
         patch = RegularPolygon((x, y), numVertices=6, facecolor="white", radius=2 / 3, orientation=0, edgecolor="k")
         ax.add_patch(patch)
@@ -244,28 +245,24 @@ def _draw_coords_cube_format_rows(hexes, ax):
         ax.text(x, y, i, color="black", ha="center", va="center", size=20)
 
 
-def draw_board(hexes, draw_ports=True):
-    """
-    Draws the board using hex and port information.
-    :param hexes: A collection of Hex objects.
-    :param draw_ports: A collection of Port objects
-    """
+def plot_board(hexes):
     fig, ax = plt.subplots(1)
     fig.patch.set_facecolor(facts.RESOURCE_COLOURS[facts.TILES.SEA])
     ax.set_aspect("equal")
-    _draw_hexes(hexes, ax)
-
-    if draw_ports:
-        _draw_ports()
-
-    # oi = OffsetImage(plt.imread("../../game_images/settlement_red.png"), zoom=0.02)
-    # ab = AnnotationBbox(oi, (0.667, 0.0), frameon=False)
-    # ax.add_artist(ab)
-    # _draw_roads(cc.all_edges_from_centre(3), "red")
+    _draw_board(hexes, ax)
     ax.axis("off")
-
-    ax.scatter(0, 0, alpha=0.0)
     plt.show()
+
+
+def _draw_board(hexes, ax):
+    """
+    Draws the board using hex and port information.
+    :param hexes: A collection of Hex objects.
+    :param ax: THe axis to plot in.
+    """
+    _draw_hexes(hexes, ax)
+    _draw_ports(ax)
+    ax.scatter(0, 0, alpha=0.0)
 
 
 def _draw_hexes(hexes, ax):
@@ -284,24 +281,24 @@ def _draw_hexes(hexes, ax):
         ax.text(x, y, label, color=label_colour, ha="center", va="center", size=size)
 
 
-def _draw_ports():
+def _draw_ports(ax):
     """
     Draws in the ports on the map.
     """
     for p in Ports().get_all():
         sx, sy = cc.planer_position(p.sea_coord)
-        (ax, ay), (bx, by) = (cc.triple_planner_position(t) for t in p.triples)
+        (px, py), (qx, qy) = (cc.triple_planner_position(t) for t in p.triples)
 
-        sax, say, sbx, sby = (sx + ax) / 2, (sy + ay) / 2, (sx + bx) / 2, (sy + by) / 2
+        spx, spy, sqx, sqy = (sx + px) / 2, (sy + py) / 2, (sx + qx) / 2, (sy + qy) / 2
 
-        plt.plot([ax, sax], [ay, say], c="brown", linewidth=3)
-        plt.plot([bx, sbx], [by, sby], c="brown", linewidth=3)
+        ax.plot([px, spx], [py, spy], c="brown", linewidth=3)
+        ax.plot([qx, sqx], [qy, sqy], c="brown", linewidth=3)
 
 
-def _draw_roads(roads, colour):
+def _draw_roads(roads, colour, ax):
     for r in roads:
         h, v = list(zip(*cc.edge_planer_position(r)))
-        plt.plot(h, v, c=colour, linewidth=5)
+        ax.plot(h, v, c=colour, linewidth=5)
 
 
 def _draw_settlements(colours_triples, ax):
