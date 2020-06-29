@@ -3,6 +3,7 @@ from colonist_ql.model import cube_coord as cc
 import colonist_ql.patterns as patterns
 import colonist_ql.facts as facts
 import numpy as np
+import random
 
 
 class Hex:
@@ -321,3 +322,17 @@ def string_triple(t, coord_format="readable"):
         return " ".join(cc.cube_to_axial(c) for c in cc.planer_order(t))
     else:
         return " ".join(cc.planer_order(t))
+
+
+def random_hexes():
+    """
+    Obtains random hexes with resources and dice values.
+    :return: A set of hexes.
+    """
+    dice_pips = facts.DICE_VALUES.copy().reverse()
+    resources = facts.HEX_RESOURCES.copy()
+    random.shuffle(resources)
+    return {
+        Hex(c, None, r, dice_pips.pop() if r != facts.TILES.DESERT else None)
+        for c, r in zip(cc.spiral_order(cc.neighbours_from_centre(2)), resources)
+    }
