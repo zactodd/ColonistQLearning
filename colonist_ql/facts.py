@@ -67,7 +67,7 @@ RESOURCE_COLOURS = {
 }
 
 # Board Information
-VALUES = [5, 2, 6, 3, 8, 10, 9, 12, 11, 4, 8, 10, 9, 4, 5, 6, 3, 11]
+DICE_VALUES = [5, 2, 6, 3, 8, 10, 9, 12, 11, 4, 8, 10, 9, 4, 5, 6, 3, 11]
 HEX_RESOURCES = [TILES.LUMBER, TILES.WOOL, TILES.GRAIN] * 4 + [TILES.BRICK, TILES.ORE] * 3 + [TILES.DESERT]
 PORT_FRAMES = [
     [RESOURCES.WOOL, "general"],
