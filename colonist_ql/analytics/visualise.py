@@ -181,7 +181,7 @@ def plot_coords(hexes, coord_format="cube"):
         "rows": _draw_coords_cube_format_rows
     }
     assert coord_format in format_dict, \
-        f"The coord_format {coord_format} is not valid, uses one of " + ", ".join(format_dict.keys()) + "."
+        f"The coord_format {coord_format} is not valid, uses one of {','.join(format_dict.keys())}."
 
     fig, ax = plt.subplots(1)
     fig.patch.set_facecolor("white")
