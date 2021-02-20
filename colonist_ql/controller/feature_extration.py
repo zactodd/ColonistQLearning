@@ -7,7 +7,7 @@ import colonist_ql.facts as facts
 import colonist_ql.utils as utils
 from skimage import measure
 import os
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 
 RESOURCE_COLOUR_RANGES = {
@@ -137,17 +137,13 @@ def consensus_text_extraction(images, tesseract_config, synonyms={}, ignores=[])
     :param ignores: A list of results to ignore.
     :return: The guess for the image.
     """
-    guesses = {}
-    threshold = len(images)
+    guesses = Counter()
     for i in images:
         text = pytesseract.image_to_string(i, config=tesseract_config)
         if text in synonyms:
             text = synonyms[text]
-        if text in ignores:
-            continue
-        guesses[text] = guess_count = 1 + guesses[text] if text in guesses else 1
-        if guess_count > threshold:
-            break
+        if text not in ignores:
+            guesses[text] += 1
     return max(guesses.keys(), key=lambda g: guesses[g])
 
 

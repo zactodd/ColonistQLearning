@@ -12,9 +12,7 @@ import pygetwindow as gw
 
 
 def blocking_til_play():
-    for title in gw.getAllTitles():
-        if "Colonist: Play" in title:
-            break
+    while "Colonist: Play" not in gw.getAllTitles():
         time.sleep(0.5)
 
 
