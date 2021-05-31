@@ -156,7 +156,7 @@ def triples_from_neighbours(a, b):
     :return: Two cube coords which form triples with a and b.
     """
     assert is_neighbour(a, b), f"Cubes {a} and {b} to be neighbours to have triples."
-    dx, dz, dy = add(b, -a)
+    dx, dz, dy = add(b, a)
     if dx == 0:
         triples_diff = (dz, 0, dy), (dy, dz, 0)
     elif dz == 0:
