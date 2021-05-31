@@ -145,7 +145,7 @@ DICE_PIPS = {2: 1, 3: 2, 4: 3, 5: 4, 6: 5, 7: 6, 8: 5, 9: 4, 10: 3, 11: 2, 12: 1
 PREPARED_DICE_DIST = functools.reduce(operator.iconcat, [[k] * v for k, v in DICE_PIPS.items()], [])
 
 # Game Images directories
-GAME_IMAGE_DIR = game_images.__path__[0]
+GAME_IMAGE_DIR = game_images.__path__
 
 PORT_IMAGE_DIR = f"{GAME_IMAGE_DIR}/icons"
 SETTLEMENT_IMAGES_DIR = f"{GAME_IMAGE_DIR}/settlements"
