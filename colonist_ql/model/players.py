@@ -48,7 +48,10 @@ class Player:
     def _update_settlement_count(self):
         num_cities, num_settlement = 0, 0
         for s in self.settlements:
-            num_cities if s.is_city else num_settlement += 1
+            if s.is_city:
+                num_cities += 1
+            else:
+                num_settlement += 1
         return num_cities, num_settlement
 
     def _update_vp(self):
